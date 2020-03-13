@@ -28,10 +28,10 @@ spec:
   source:
     path: {{ $path }}
     repoURL: {{ $.Values.repository }}
-{{ if $source }}
-{{- toYaml $source | indent 6 }}
+{{ if $source -}}
+{{- toYaml $source | indent 4 }}
 {{- end }}
-{{ if not $disableAutoSync }}
+{{- if not $disableAutoSync }}
   syncPolicy:
     automated:
       prune: {{ default true $automatedPrune }}

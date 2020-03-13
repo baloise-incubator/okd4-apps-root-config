@@ -23,4 +23,8 @@ namespaceResourceBlacklist:
 
 applications:
   argocd: {}
+  cluster-resources:
+    source:
+      directory:
+        recurse: true
   sealed-secrets: {}
