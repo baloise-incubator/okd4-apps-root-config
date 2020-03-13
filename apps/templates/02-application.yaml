@@ -1,18 +1,11 @@
 {{- range $key, $value := .Values.applications -}}
-{{- $disabled := false}}
+{{- $disabled := default false .disabled }}
 {{- $server := "https://kubernetes.default.svc" }}
-{{- $path := $key }}
-{{- $source := false }}
-{{- $disableAutoSync := false }}
-{{- $automatedPrune := true }}
-{{- $selfHeal := true }}
-{{- if . }}
-{{- $disabled = .disabled -}}
-{{- $server = .server -}}
-{{- $path = .path -}}
-{{- $source = .source -}}
-{{- $disableAutoSync = .disableAutoSync -}}
-{{- end -}}
+{{- $path := default $key .path }}
+{{- $source := default false .source }}
+{{- $disableAutoSync := default false .disableAutoSync }}
+{{- $automatedPrune := default true .automatedPrune }}
+{{- $selfHeal := default true .selfHeal }}
 {{- if not $disabled }}
 ---
 apiVersion: argoproj.io/v1alpha1
