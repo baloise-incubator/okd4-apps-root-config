@@ -1,7 +1,7 @@
 {{- range $key, $value := .Values.applications -}}
 {{- $disableNamespaceCreation := false -}}
 {{- if . -}}
-$disableNamespaceCreation = .disableNamespaceCreation
+{{- $disableNamespaceCreation = .disableNamespaceCreation -}}
 {{- end }}
 {{- if not $disableNamespaceCreation }}
 ---
