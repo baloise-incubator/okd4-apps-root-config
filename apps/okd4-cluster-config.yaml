@@ -6,7 +6,7 @@ namespace:
   labels: {}
 
 enableDefaultNetworkPolicy: false
-enableDefaultLimitRange: true
+enableDefaultLimitRange: false
 allowAllNamespaces: true
 
 roleBindings:
