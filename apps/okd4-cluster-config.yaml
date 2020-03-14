@@ -28,5 +28,6 @@ applications:
       directory:
         recurse: true
   sealed-secrets: {}
+  harbor: {}
   tekton-chatopshandler:
     disableAutoSync: true
