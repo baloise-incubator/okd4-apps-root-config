@@ -7,7 +7,7 @@ namespace:
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false
-allowAllNamespaces: false
+allowAllNamespaces: true
 
 roleBindings:
 #  - groupName: "team1"
