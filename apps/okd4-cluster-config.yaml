@@ -28,4 +28,5 @@ applications:
       directory:
         recurse: true
   sealed-secrets: {}
-  tekton-chatopshandler: {}
+  tekton-chatopshandler:
+    automatedPrune: false
