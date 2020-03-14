@@ -19,4 +19,8 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications: {}
+applications:
+  cluster-resources:
+    source:
+      directory:
+        recurse: true
