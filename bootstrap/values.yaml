@@ -1,3 +1,4 @@
 repository: https://github.com/baloise-incubator/okd4-apps-root-config.git
 bootstrap:
   - name: okd4-cluster-config
+  - name: okd4-cluster-infra-apps

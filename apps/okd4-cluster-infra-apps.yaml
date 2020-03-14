@@ -1,0 +1,33 @@
+repository: https://github.com/baloise-incubator/okd4-cluster-infra-apps.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels: {}
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: true
+allowAllNamespaces: true
+
+roleBindings:
+#  - groupName: "team1"
+#    clusterRoleName: "admin"
+
+clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications:
+  argocd: {}
+  cluster-resources:
+    source:
+      directory:
+        recurse: true
+  sealed-secrets: {}
+  harbor: {}
+  tekton-chatopshandler:
+    disableAutoSync: true
