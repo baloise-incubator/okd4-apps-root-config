@@ -21,4 +21,3 @@ namespaceResourceBlacklist:
 
 applications:
   gitops-nginx-demo: {}
-  gitops-nginx-demo-1edd27d2-preview: {}
