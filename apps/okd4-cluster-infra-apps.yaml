@@ -25,5 +25,6 @@ applications:
   argocd: {}
   sealed-secrets: {}
   harbor: {}
+  tekton-dashboard: {}
   tekton-chatopshandler:
     disableAutoSync: true
