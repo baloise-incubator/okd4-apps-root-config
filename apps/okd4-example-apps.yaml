@@ -20,4 +20,4 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  gitops-nginx-demo: {}
+  gitops-nginx-demo-test: {}
