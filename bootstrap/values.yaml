@@ -3,3 +3,4 @@ bootstrap:
   - name: okd4-cluster-infra-apps
   - name: okd4-example-apps
   - name: okd4-cluster-resources
+  - name: okd4-joachim-apps
