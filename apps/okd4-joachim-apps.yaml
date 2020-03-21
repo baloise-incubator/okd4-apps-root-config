@@ -21,3 +21,5 @@ namespaceResourceBlacklist:
 
 applications:
   joachim-demo-static: {}
+  pizza-inventory-test: {}
+  pizza-order-test: {}
