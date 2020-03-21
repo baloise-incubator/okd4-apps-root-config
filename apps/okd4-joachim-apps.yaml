@@ -21,4 +21,3 @@ namespaceResourceBlacklist:
 
 applications:
   joachim-demo-static: {}
-  joachim-demo-static2: {}
