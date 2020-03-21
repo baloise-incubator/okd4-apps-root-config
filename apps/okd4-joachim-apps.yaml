@@ -1,4 +1,4 @@
-repository: https://github.com/joachimprinzbach/okd4-deployment-configuration
+repository: https://github.com/joachimprinzbach/okd4-deployment-configuration.git
 #argocdNamespace: "argocd"
 #server: "https://kubernetes.default.svc"
 namespace:
