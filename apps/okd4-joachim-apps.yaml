@@ -23,3 +23,5 @@ applications:
   joachim-demo-static: {}
   pizza-inventory-test: {}
   pizza-order-test: {}
+  pizza-inventory-prod: {}
+  pizza-order-prod: {}
