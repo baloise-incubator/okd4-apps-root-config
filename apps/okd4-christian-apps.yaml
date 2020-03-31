@@ -20,3 +20,4 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
+  zally: {}
