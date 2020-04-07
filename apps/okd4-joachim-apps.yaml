@@ -26,3 +26,4 @@ applications:
   pizza-inventory-prod: {}
   pizza-order-prod: {}
   test-app: {}
+  dialogflow-api: {}
