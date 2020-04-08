@@ -29,3 +29,4 @@ applications:
   tekton-dashboard: {}
   tekton-chatopshandler:
     disableAutoSync: true
+  kubecost: {}
