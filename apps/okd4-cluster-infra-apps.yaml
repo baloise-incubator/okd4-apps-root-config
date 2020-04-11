@@ -33,3 +33,4 @@ applications:
   openshift-acme:
     disableAutoSync: true
   iptables-config: {}
+  rook-ceph: {}
