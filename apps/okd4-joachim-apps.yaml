@@ -3,7 +3,8 @@ repository: https://github.com/joachimprinzbach/okd4-deployment-configuration.gi
 #server: "https://kubernetes.default.svc"
 namespace:
   annotations: {}
-  labels: {}
+  labels:
+    client: joachim
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false

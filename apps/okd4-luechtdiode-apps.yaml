@@ -3,7 +3,8 @@ repository: https://github.com/luechtdiode/okd4-appconfigs.git
 #server: "https://kubernetes.default.svc"
 namespace:
   annotations: {}
-  labels: {}
+  labels:
+    client: leuchtdiode
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false

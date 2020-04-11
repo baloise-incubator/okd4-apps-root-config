@@ -3,7 +3,8 @@ repository: https://github.com/christiansiegel/okd4-deployment-configuration.git
 #server: "https://kubernetes.default.svc"
 namespace:
   annotations: {}
-  labels: {}
+  labels:
+    client: christian
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false

@@ -3,7 +3,8 @@ repository: https://github.com/baloise-incubator/okd4-cluster-resources.git
 #server: "https://kubernetes.default.svc"
 namespace:
   annotations: {}
-  labels: {}
+  labels:
+    client: cluster-infra
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false

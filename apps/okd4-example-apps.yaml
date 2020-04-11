@@ -3,7 +3,8 @@ repository: https://github.com/baloise-incubator/okd4-example-apps.git
 #server: "https://kubernetes.default.svc"
 namespace:
   annotations: {}
-  labels: {}
+  labels:
+    client: example
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false
