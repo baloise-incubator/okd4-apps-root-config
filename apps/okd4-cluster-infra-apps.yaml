@@ -32,3 +32,4 @@ applications:
   kubecost: {}
   openshift-acme:
     disableAutoSync: true
+  iptables-config: {}
