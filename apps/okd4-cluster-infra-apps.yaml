@@ -30,6 +30,5 @@ applications:
   tekton-chatopshandler:
     disableAutoSync: true
   kubecost: {}
-  portworx-storage: {}
   openshift-acme:
     disableAutoSync: true
