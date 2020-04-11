@@ -31,4 +31,5 @@ applications:
     disableAutoSync: true
   kubecost: {}
   portworx-storage: {}
-  openshift-acme: {}
+  openshift-acme:
+    disableAutoSync: true
