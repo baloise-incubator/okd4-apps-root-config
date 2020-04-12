@@ -36,3 +36,4 @@ applications:
   iptables-config: {}
   rook-ceph:
     disableAutoSync: true
+  strimzi-kafka-operator: {}
