@@ -37,3 +37,4 @@ applications:
   rook-ceph:
     disableAutoSync: true
   strimzi-kafka-operator: {}
+  jaeger-operator: {}
