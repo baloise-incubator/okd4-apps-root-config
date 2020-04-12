@@ -39,3 +39,4 @@ applications:
   strimzi-kafka-operator: {}
   jaeger-operator: {}
   kiali-operator: {}
+  istio-operator: {}
