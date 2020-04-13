@@ -24,3 +24,4 @@ applications:
   gitops-nginx-demo-test: {}
   gitops-nginx-demo-int: {}
   gitops-nginx-demo-e326a852-preview: {}
+  bookinfo: {}
