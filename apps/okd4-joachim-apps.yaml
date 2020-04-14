@@ -27,5 +27,4 @@ applications:
   pizza-inventory-prod: {}
   pizza-order-prod:
     disableAutoSync: true
-  test-app: {}
   dialogflow-api: {}
