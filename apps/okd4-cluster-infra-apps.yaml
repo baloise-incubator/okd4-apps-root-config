@@ -41,3 +41,4 @@ applications:
   kiali-operator: {}
   istio-operator: {}
   argo: {}
+  minio: {}
