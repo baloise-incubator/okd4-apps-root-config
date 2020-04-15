@@ -40,3 +40,4 @@ applications:
   jaeger-operator: {}
   kiali-operator: {}
   istio-operator: {}
+  argo: {}
