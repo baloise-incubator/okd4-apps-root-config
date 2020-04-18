@@ -27,4 +27,4 @@ applications:
   bookinfo: {}
   devops-octopus: {}
   devops-butterfly: {}
-  devops-octopus-prod: {}
+  octopus: {}
