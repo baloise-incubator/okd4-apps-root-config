@@ -26,4 +26,3 @@ applications:
   gitops-nginx-demo-e326a852-preview: {}
   bookinfo: {}
   octopus: {}
-  octopus-6a27334c-preview: {}
