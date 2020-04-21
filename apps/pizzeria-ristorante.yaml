@@ -20,7 +20,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  menu-service: &id001 {}
-  stock-service: *id001
-  pizzeria-application: *id001
+applications: {}
