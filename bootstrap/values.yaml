@@ -6,3 +6,4 @@ bootstrap:
   - name: okd4-joachim-apps
   - name: okd4-christian-apps
   - name: okd4-luechtdiode-apps
+  - name: pizzeria-ristorante
