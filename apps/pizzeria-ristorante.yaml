@@ -24,3 +24,5 @@ applications:
   menu-service: {}
   pizzeria-application: {}
   stock-service: {}
+  menu-service-42815cc3-preview: {}
+  stock-service-f4a77768-preview: {}
