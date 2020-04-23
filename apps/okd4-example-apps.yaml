@@ -27,3 +27,4 @@ applications:
   bookinfo: {}
   octopus: {}
   octopus-47c43cc1-preview: {}
+  voting: {}
