@@ -42,3 +42,4 @@ applications:
   istio-operator: {}
   argo: {}
   minio: {}
+  che: {}
