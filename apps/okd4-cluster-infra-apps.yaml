@@ -43,3 +43,4 @@ applications:
   argo: {}
   minio: {}
   che: {}
+  keycloak-operator: {}
