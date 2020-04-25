@@ -44,3 +44,4 @@ applications:
   minio: {}
   che: {}
   keycloak-operator: {}
+  keycloak: {}
