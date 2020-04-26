@@ -28,3 +28,4 @@ applications:
   octopus: {}
   octopus-47c43cc1-preview: {}
   voting: {}
+  spring-keycloak-demo: {}
