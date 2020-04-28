@@ -45,4 +45,5 @@ applications:
   che: {}
   keycloak-operator: {}
   keycloak: {}
-  kubevirt-hyperconverged: {}
+  kubevirt-hyperconverged:
+    disableAutoSync: true
