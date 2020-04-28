@@ -45,3 +45,4 @@ applications:
   che: {}
   keycloak-operator: {}
   keycloak: {}
+  kubevirt-hyperconverged: {}
