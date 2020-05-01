@@ -7,7 +7,7 @@ namespace:
     client: joachim
 
 enableDefaultNetworkPolicy: false
-enableDefaultLimitRange: false
+enableDefaultLimitRange: true
 allowAllNamespaces: true
 
 roleBindings:
