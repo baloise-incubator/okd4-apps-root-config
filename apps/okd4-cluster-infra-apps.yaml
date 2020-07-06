@@ -31,3 +31,4 @@ applications:
     disableAutoSync: true
   kubecost: {}
   openshift-storage: {}
+  iptables-config: {}
