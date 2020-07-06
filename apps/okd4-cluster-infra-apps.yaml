@@ -30,4 +30,5 @@ applications:
   sealed-secrets:
     disableAutoSync: true
   kubecost: {}
-  openshift-storage: {}
+  openshift-storage:
+    disableAutoSync: true
