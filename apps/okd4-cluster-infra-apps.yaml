@@ -27,5 +27,6 @@ applications:
   tekton-dashboard: {}
   tekton-chatopshandler:
     disableAutoSync: true
-  sealed-secrets: {}
+  sealed-secrets:
+    disableAutoSync: true
   kubecost: {}
