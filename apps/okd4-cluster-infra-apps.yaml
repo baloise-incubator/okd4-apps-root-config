@@ -24,26 +24,6 @@ namespaceResourceBlacklist:
 
 applications:
   argocd: {}
-  sealed-secrets: {}
-  harbor: {}
-  hcloud-csi: {}
   tekton-dashboard: {}
   tekton-chatopshandler:
-    disableAutoSync: true
-  kubecost: {}
-  openshift-acme:
-    disableAutoSync: true
-  iptables-config: {}
-  rook-ceph:
-    disableAutoSync: true
-  strimzi-kafka-operator: {}
-  jaeger-operator: {}
-  kiali-operator: {}
-  istio-operator: {}
-  argo: {}
-  minio: {}
-  che: {}
-  keycloak-operator: {}
-  keycloak: {}
-  kubevirt-hyperconverged:
     disableAutoSync: true
