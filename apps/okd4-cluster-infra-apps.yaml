@@ -27,3 +27,4 @@ applications:
   tekton-dashboard: {}
   tekton-chatopshandler:
     disableAutoSync: true
+  sealed-secrets: {}
