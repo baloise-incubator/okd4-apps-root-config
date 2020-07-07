@@ -34,3 +34,4 @@ applications:
   iptables-config: {}
   rook-ceph: {}
   harbor: {}
+  openshift-acme: {}
