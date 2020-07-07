@@ -33,3 +33,4 @@ applications:
   openshift-storage: {}
   iptables-config: {}
   rook-ceph: {}
+  harbor: {}
