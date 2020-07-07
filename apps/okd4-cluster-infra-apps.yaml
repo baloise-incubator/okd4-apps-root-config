@@ -32,3 +32,4 @@ applications:
   kubecost: {}
   openshift-storage: {}
   iptables-config: {}
+  rook-ceph: {}
