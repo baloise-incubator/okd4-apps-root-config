@@ -34,6 +34,5 @@ applications:
   rook-ceph: {}
   harbor:
     disableAutoSync: true
-  openshift-acme: {}
   tekton-pipelines:
     disableAutoSync: true
