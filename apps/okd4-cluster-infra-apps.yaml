@@ -33,5 +33,7 @@ applications:
   iptables-config: {}
   rook-ceph: {}
   harbor:
-      disableAutoSync: true
+    disableAutoSync: true
   openshift-acme: {}
+  tekton-pipelines:
+    disableAutoSync: true
