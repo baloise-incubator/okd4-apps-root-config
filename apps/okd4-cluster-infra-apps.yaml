@@ -33,5 +33,6 @@ applications:
   openshift-storage: {}
   iptables-config: {}
   rook-ceph: {}
-  harbor: {}
+  harbor:
+    disableAutoSync: true
   openshift-acme: {}
