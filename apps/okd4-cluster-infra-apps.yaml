@@ -36,3 +36,4 @@ applications:
     disableAutoSync: true
   tekton-pipelines:
     disableAutoSync: true
+  test-123: {}
