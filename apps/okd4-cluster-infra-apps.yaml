@@ -26,7 +26,10 @@ applications:
   argocd: {}
   tekton-dashboard: {}
   tekton-chatopshandler: {}
-  tekton-pipelines: {}
+  tekton-pipelines:
+    source:
+      directory:
+        recurse: true
   sealed-secrets: {}
   kubecost: {}
   openshift-storage: {}
