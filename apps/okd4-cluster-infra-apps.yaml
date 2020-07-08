@@ -30,7 +30,8 @@ applications:
   sealed-secrets: {}
   kubecost: {}
   openshift-storage: {}
-  openshift-acme: {}
+  openshift-acme:
+    disableAutoSync: true
   iptables-config: {}
   rook-ceph: {}
   harbor:
