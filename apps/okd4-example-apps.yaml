@@ -22,6 +22,5 @@ namespaceResourceBlacklist:
 
 applications:
   gitops-nginx-demo-test: {}
-  gitops-nginx-demo-int: {}
   octopus: {}
   spring-keycloak-demo: {}
