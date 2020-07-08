@@ -25,15 +25,13 @@ namespaceResourceBlacklist:
 applications:
   argocd: {}
   tekton-dashboard: {}
-  tekton-chatopshandler:
-    disableAutoSync: true
+  tekton-chatopshandler: {}
+  tekton-pipelines: {}
   sealed-secrets: {}
   kubecost: {}
   openshift-storage: {}
+  openshift-acme: {}
   iptables-config: {}
   rook-ceph: {}
   harbor:
     disableAutoSync: true
-  tekton-pipelines:
-    disableAutoSync: true
-  openshift-acme: {}
