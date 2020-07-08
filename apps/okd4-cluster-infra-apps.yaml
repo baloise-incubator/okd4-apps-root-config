@@ -27,12 +27,11 @@ applications:
   tekton-dashboard: {}
   tekton-chatopshandler:
     disableAutoSync: true
-  sealed-secrets:
-    disableAutoSync: true
+  sealed-secrets:{}
   kubecost: {}
   openshift-storage: {}
   iptables-config: {}
   rook-ceph: {}
   harbor:
-    disableAutoSync: true
+      disableAutoSync: true
   openshift-acme: {}
