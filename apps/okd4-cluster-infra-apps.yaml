@@ -27,7 +27,7 @@ applications:
   tekton-dashboard: {}
   tekton-chatopshandler:
     disableAutoSync: true
-  sealed-secrets:{}
+  sealed-secrets: {}
   kubecost: {}
   openshift-storage: {}
   iptables-config: {}
