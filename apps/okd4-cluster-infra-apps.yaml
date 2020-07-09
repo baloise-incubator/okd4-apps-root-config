@@ -32,7 +32,6 @@ applications:
         recurse: true
   sealed-secrets: {}
   kubecost: {}
-  openshift-storage: {}
   openshift-acme:
     disableAutoSync: true
   iptables-config: {}
