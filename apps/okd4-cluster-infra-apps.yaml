@@ -31,8 +31,7 @@ applications:
       directory:
         recurse: true
   sealed-secrets: {}
-  kubecost:
-    disableAutoSync: true
+  kubecost: {}
   openshift-acme: {}
   iptables-config: {}
   rook-ceph: {}
