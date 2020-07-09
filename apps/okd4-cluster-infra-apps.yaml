@@ -15,8 +15,8 @@ roleBindings:
 #    clusterRoleName: "admin"
 
 clusterResourceWhitelist:
-- group: '*'
-  kind: '*'
+  - group: '*'
+    kind: '*'
 
 namespaceResourceBlacklist:
 #  - group: 'apps'
@@ -31,9 +31,9 @@ applications:
       directory:
         recurse: true
   sealed-secrets: {}
-  kubecost: {}
-  openshift-acme:
+  kubecost:
     disableAutoSync: true
+  openshift-acme: {}
   iptables-config: {}
   rook-ceph: {}
   harbor:
