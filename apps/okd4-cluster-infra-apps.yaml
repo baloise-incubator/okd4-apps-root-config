@@ -15,8 +15,8 @@ roleBindings:
 #    clusterRoleName: "admin"
 
 clusterResourceWhitelist:
-  - group: '*'
-    kind: '*'
+- group: '*'
+  kind: '*'
 
 namespaceResourceBlacklist:
 #  - group: 'apps'
@@ -37,3 +37,4 @@ applications:
   rook-ceph: {}
   harbor:
     disableAutoSync: true
+  bitbucket: {}
