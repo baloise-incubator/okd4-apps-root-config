@@ -40,3 +40,6 @@ applications:
   bitbucket: {}
   application-monitoring:
     disableAutoSync: true
+    source:
+      directory:
+        recurse: true
