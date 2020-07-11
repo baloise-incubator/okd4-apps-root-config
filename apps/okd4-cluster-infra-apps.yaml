@@ -38,3 +38,5 @@ applications:
   harbor:
     disableAutoSync: true
   bitbucket: {}
+  application-monitoring:
+    disableAutoSync: true
