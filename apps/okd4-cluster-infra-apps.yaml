@@ -43,3 +43,4 @@ applications:
     source:
       directory:
         recurse: true
+  grafana-operator: {}
