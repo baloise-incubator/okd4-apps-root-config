@@ -38,10 +38,5 @@ applications:
   harbor:
     disableAutoSync: true
   bitbucket: {}
-  application-monitoring:
-    disableAutoSync: true
-    source:
-      directory:
-        recurse: true
   grafana-operator: {}
   grafana: {}
