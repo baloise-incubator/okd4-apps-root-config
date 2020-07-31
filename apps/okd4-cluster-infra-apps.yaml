@@ -40,4 +40,5 @@ applications:
   bitbucket: {}
   grafana-operator: {}
   grafana: {}
-  noobaa: {}
+  noobaa:
+   disableAutoSync: true
