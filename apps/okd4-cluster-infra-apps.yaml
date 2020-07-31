@@ -40,3 +40,4 @@ applications:
   bitbucket: {}
   grafana-operator: {}
   grafana: {}
+  noobaa: {}
