@@ -41,3 +41,4 @@ applications:
   grafana-operator: {}
   grafana: {}
   noobaa: {}
+  velero: {}
