@@ -47,3 +47,4 @@ applications:
     source:
       directory:
         recurse: true
+  prometheus-operator: {}
