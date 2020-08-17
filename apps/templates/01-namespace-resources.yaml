@@ -11,6 +11,7 @@ metadata:
   name: {{ $key }}
 {{ if $.Values.namespace.annotations }}
   annotations:
+    openshift.io/requester: {{ .Release.Name }}
 {{ toYaml $.Values.namespace.annotations | indent 4 }}
 {{- end }}
 {{ if $.Values.namespace.labels }}
