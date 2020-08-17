@@ -42,3 +42,4 @@ applications:
   grafana: {}
   noobaa: {}
   velero: {}
+  kubernetes-oom-event-generator: {}
