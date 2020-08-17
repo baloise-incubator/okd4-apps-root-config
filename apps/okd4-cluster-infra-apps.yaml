@@ -43,3 +43,4 @@ applications:
   noobaa: {}
   velero: {}
   kubernetes-oom-event-generator: {}
+  monitoring-stack: {}
