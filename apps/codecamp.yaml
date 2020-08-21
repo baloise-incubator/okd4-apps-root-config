@@ -1,0 +1,22 @@
+repository: https://github.com/bal-code-camp-rest-oidc/okd4-appconfig.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels:
+    client: codecamp
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: false
+
+roleBindings:
+#  - groupName: "team1"
+#    clusterRoleName: "admin"
+
+clusterResourceWhitelist:
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications: {}
