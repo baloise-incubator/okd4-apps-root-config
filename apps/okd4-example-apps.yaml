@@ -24,4 +24,3 @@ applications:
   gitops-nginx-demo-test: {}
   octopus: {}
   spring-keycloak-demo: {}
-  okd4-example-apps-monitoring: {}
