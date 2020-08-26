@@ -1,4 +1,3 @@
- 
 repository: https://github.com/bal-code-camp-micro-frontend/okd4-deployment.git
 #argocdNamespace: "argocd"
 #server: "https://kubernetes.default.svc"
@@ -23,3 +22,4 @@ namespaceResourceBlacklist:
 
 applications:
   micro-frontends-test: {}
+  micro-frontends-2-test: {}
