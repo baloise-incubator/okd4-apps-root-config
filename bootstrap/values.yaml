@@ -8,3 +8,4 @@ bootstrap:
   - name: okd4-luechtdiode-apps
   - name: pizzeria-ristorante
   - name: codecamp
+  - name: bal-code-camp-micro-frontend
