@@ -21,4 +21,4 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  micro-frontends-test: {}
+  frontend-alpha: {}
