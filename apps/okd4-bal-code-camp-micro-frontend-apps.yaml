@@ -11,8 +11,18 @@ enableDefaultLimitRange: false
 allowAllNamespaces: true
 
 roleBindings:
-#  - groupName: "team1"
-#    clusterRoleName: "admin"
+  - name: christiansiegel
+    kind: User
+    clusterRoleName: admin
+  - name: kullmanp
+    kind: User
+    clusterRoleName: admin
+  - name: hirsch88
+    kind: User
+    clusterRoleName: admin
+  - name: mateuszbaloise
+    kind: User
+    clusterRoleName: admin
 
 clusterResourceWhitelist:
 
