@@ -1,4 +1,4 @@
-repository: https://github.com/baloise/codes-and-texts.git
+repository: https://github.com/baloise-incubator/codes-and-texts-deployment.git
 #argocdNamespace: "argocd"
 #server: "https://kubernetes.default.svc"
 namespace:
@@ -22,5 +22,5 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  okd4-cat-config: {}
+  codes-and-texts: {}
 
