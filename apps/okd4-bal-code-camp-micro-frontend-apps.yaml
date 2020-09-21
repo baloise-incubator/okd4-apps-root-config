@@ -34,3 +34,5 @@ applications:
   frontend-alpha: {}
   frontend-beta: {}
   kwik-e-list: {}
+  kwik-e-detail: {}
+  kwik-e-checkout: {}
