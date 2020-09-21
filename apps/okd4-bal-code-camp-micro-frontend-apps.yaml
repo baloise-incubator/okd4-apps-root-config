@@ -11,18 +11,18 @@ enableDefaultLimitRange: false
 allowAllNamespaces: true
 
 roleBindings:
-  - name: christiansiegel
-    kind: User
-    clusterRoleName: admin
-  - name: kullmanp
-    kind: User
-    clusterRoleName: admin
-  - name: hirsch88
-    kind: User
-    clusterRoleName: admin
-  - name: mateuszbaloise
-    kind: User
-    clusterRoleName: admin
+- name: christiansiegel
+  kind: User
+  clusterRoleName: admin
+- name: kullmanp
+  kind: User
+  clusterRoleName: admin
+- name: hirsch88
+  kind: User
+  clusterRoleName: admin
+- name: mateuszbaloise
+  kind: User
+  clusterRoleName: admin
 
 clusterResourceWhitelist:
 
@@ -33,3 +33,4 @@ namespaceResourceBlacklist:
 applications:
   frontend-alpha: {}
   frontend-beta: {}
+  kwik-e-list: {}
