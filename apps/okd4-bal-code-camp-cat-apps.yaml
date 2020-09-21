@@ -1,0 +1,26 @@
+repository: https://github.com/baloise-incubator/codes-and-texts-deployment.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels:
+    client: bal-code-camp-cat
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: false
+allowAllNamespaces: true
+
+roleBindings:
+  - name: mikevader
+    kind: User
+    clusterRoleName: admin
+
+clusterResourceWhitelist:
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications:
+  codes-and-texts: {}
+

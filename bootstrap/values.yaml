@@ -9,3 +9,4 @@ bootstrap:
   - name: pizzeria-ristorante
   - name: codecamp
   - name: okd4-bal-code-camp-micro-frontend-apps
+  - name: okd4-bal-code-camp-cat-apps
