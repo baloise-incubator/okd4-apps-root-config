@@ -31,7 +31,6 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  kwik-e-list: {}
   kwik-e-detail: {}
   kwik-e-checkout: {}
   kwik-e-proxy: {}
