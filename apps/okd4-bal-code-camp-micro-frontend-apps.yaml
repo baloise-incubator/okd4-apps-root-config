@@ -34,3 +34,4 @@ applications:
   kwik-e-detail: {}
   kwik-e-checkout: {}
   kwik-e-proxy: {}
+  kwik-e-list: {}
