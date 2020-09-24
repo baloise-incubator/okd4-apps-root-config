@@ -35,3 +35,4 @@ applications:
   kwik-e-checkout: {}
   kwik-e-proxy: {}
   kwik-e-list: {}
+  kwik-e-api: {}
