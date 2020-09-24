@@ -10,8 +10,19 @@ enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false
 
 roleBindings:
-#  - groupName: "team1"
-#    clusterRoleName: "admin"
+- name: luechtdiode
+  kind: User
+  clusterRoleName: admin
+- name: leubedane
+  kind: User
+  clusterRoleName: admin
+- name: Tiliavir
+  kind: User
+  clusterRoleName: admin
+- name: ArthurNeudeck
+  kind: User
+  clusterRoleName: admin
+
 
 clusterResourceWhitelist:
 
