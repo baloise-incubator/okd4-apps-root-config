@@ -38,3 +38,4 @@ applications:
   kwik-e-api: {}
   kwik-e-mart-v1-ssi: {}
   kwik-e-mart-v2-webcomponents: {}
+  kwik-e-mart-v3-appshell: {}
