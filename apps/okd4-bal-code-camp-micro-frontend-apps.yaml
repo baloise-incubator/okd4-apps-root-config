@@ -37,3 +37,4 @@ applications:
   kwik-e-list: {}
   kwik-e-api: {}
   kwik-e-mart-v1-ssi: {}
+  kwik-e-mart-v2-webcomponents: {}
