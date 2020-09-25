@@ -48,3 +48,4 @@ applications:
       directory:
         recurse: true
   prometheus-operator: {}
+  minio: {}
