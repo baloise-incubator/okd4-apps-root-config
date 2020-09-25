@@ -36,3 +36,6 @@ applications:
   kwik-e-proxy: {}
   kwik-e-list: {}
   kwik-e-api: {}
+  kwik-e-mart-v3-appshell: {}
+  kwik-e-mart-v2-webcomponents: {}
+  kwik-e-mart-v1-ssi: {}
