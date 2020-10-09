@@ -43,9 +43,5 @@ applications:
   noobaa: {}
   velero: {}
   kubernetes-oom-event-generator: {}
-  monitoring-stack:
-    source:
-      directory:
-        recurse: true
   prometheus-operator: {}
   minio: {}
