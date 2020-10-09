@@ -44,4 +44,3 @@ applications:
   velero: {}
   kubernetes-oom-event-generator: {}
   prometheus-operator: {}
-  minio: {}
