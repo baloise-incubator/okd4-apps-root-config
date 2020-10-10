@@ -2,7 +2,8 @@ repository: https://github.com/baloise-incubator/okd4-cluster-infra-apps.git
 #argocdNamespace: "argocd"
 #server: "https://kubernetes.default.svc"
 namespace:
-  annotations: {}
+  annotations:
+    openshift.io/node-selector: ""
   labels:
     client: cluster-infra
 
