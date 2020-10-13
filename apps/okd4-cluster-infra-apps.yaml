@@ -34,7 +34,8 @@ applications:
   kubecost: {}
   openshift-acme: {}
   iptables-config: {}
-  rook-ceph: {}
+  rook-ceph:
+    disableAutoSync: true
   harbor:
     disableAutoSync: true
   bitbucket: {}
