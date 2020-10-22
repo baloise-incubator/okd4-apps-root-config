@@ -35,3 +35,4 @@ applications:
         recurse: true
   openshift-acme: {}
   kubernetes-oom-event-generator: {}
+  test: {}
