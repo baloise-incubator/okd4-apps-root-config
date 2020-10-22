@@ -24,13 +24,14 @@ namespaceResourceBlacklist:
 
 applications:
   argocd: {}
+  sealed-secrets: {}
 #  tekton-dashboard: {}
 #  tekton-chatopshandler: {}
 #  tekton-pipelines:
 #    source:
 #      directory:
 #        recurse: true
-#  sealed-secrets: {}
+#
 #  kubecost: {}
 #  openshift-acme: {}
 #  iptables-config: {}
