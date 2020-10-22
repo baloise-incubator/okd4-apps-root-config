@@ -25,6 +25,7 @@ namespaceResourceBlacklist:
 applications:
   argocd: {}
   sealed-secrets: {}
+  rook-ceph: {}
 #  tekton-dashboard: {}
 #  tekton-chatopshandler: {}
 #  tekton-pipelines:
