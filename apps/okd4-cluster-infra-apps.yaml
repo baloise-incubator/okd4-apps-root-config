@@ -24,24 +24,23 @@ namespaceResourceBlacklist:
 
 applications:
   argocd: {}
-  tekton-dashboard: {}
-  tekton-chatopshandler: {}
-  tekton-pipelines:
-    source:
-      directory:
-        recurse: true
-  sealed-secrets: {}
-  kubecost: {}
-  openshift-acme: {}
-  iptables-config: {}
-  rook-ceph:
-    disableAutoSync: true
-  harbor:
-    disableAutoSync: true
-  bitbucket: {}
-  grafana-operator: {}
-  grafana: {}
-  noobaa: {}
-  velero: {}
-  kubernetes-oom-event-generator: {}
-  prometheus-operator: {}
+#  tekton-dashboard: {}
+#  tekton-chatopshandler: {}
+#  tekton-pipelines:
+#    source:
+#      directory:
+#        recurse: true
+#  sealed-secrets: {}
+#  kubecost: {}
+#  openshift-acme: {}
+#  iptables-config: {}
+#  rook-ceph: {}
+#  harbor:
+#    disableAutoSync: true
+#  bitbucket: {}
+#  grafana-operator: {}
+#  grafana: {}
+#  noobaa: {}
+#  velero: {}
+#  kubernetes-oom-event-generator: {}
+#  prometheus-operator: {}
