@@ -27,23 +27,11 @@ applications:
   sealed-secrets: {}
   rook-ceph: {}
   harbor: {}
-#  tekton-dashboard: {}
-#  tekton-chatopshandler: {}
-#  tekton-pipelines:
-#    source:
-#      directory:
-#        recurse: true
-#
-#  kubecost: {}
-#  openshift-acme: {}
-#  iptables-config: {}
-#  rook-ceph: {}
-#  harbor:
-#    disableAutoSync: true
-#  bitbucket: {}
-#  grafana-operator: {}
-#  grafana: {}
-#  noobaa: {}
-#  velero: {}
-#  kubernetes-oom-event-generator: {}
-#  prometheus-operator: {}
+  tekton-dashboard: {}
+  tekton-chatopshandler: {}
+  tekton-pipelines:
+    source:
+      directory:
+        recurse: true
+  openshift-acme: {}
+  kubernetes-oom-event-generator: {}
