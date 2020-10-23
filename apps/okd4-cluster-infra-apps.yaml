@@ -37,3 +37,4 @@ applications:
   kubernetes-oom-event-generator: {}
   test: {}
   kubevirt: {}
+  keycloak-operator: {}
