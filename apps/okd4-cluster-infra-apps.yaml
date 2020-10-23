@@ -36,3 +36,4 @@ applications:
   openshift-acme: {}
   kubernetes-oom-event-generator: {}
   test: {}
+  kubevirt: {}
