@@ -36,5 +36,5 @@ applications:
   openshift-acme: {}
   kubernetes-oom-event-generator: {}
   test: {}
-  kubevirt: {}
   keycloak-operator: {}
+  kubevirt-hyperconverged: {}
