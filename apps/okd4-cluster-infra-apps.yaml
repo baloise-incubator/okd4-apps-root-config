@@ -38,3 +38,5 @@ applications:
   test: {}
   keycloak-operator: {}
   kubevirt-hyperconverged: {}
+  elasticsearch-operator: {}
+  jaeger-operator: {}
