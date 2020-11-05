@@ -1,0 +1,24 @@
+repository: https://github.com/baloise-incubator/this-or-that-deployment.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels:
+    client: philipp
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: false
+allowAllNamespaces: true
+
+roleBindings:
+#  - groupName: "team1"
+#    clusterRoleName: "admin"
+
+clusterResourceWhitelist:
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications:
+  this-or-that: {}
