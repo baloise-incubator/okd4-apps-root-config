@@ -10,3 +10,4 @@ bootstrap:
  - name: codecamp
  - name: okd4-bal-code-camp-micro-frontend-apps
  - name: okd4-bal-code-camp-cat-apps
+ - name: okd4-this-or-that-apps
