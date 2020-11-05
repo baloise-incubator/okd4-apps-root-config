@@ -8,12 +8,12 @@ namespace:
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false
-allowAllNamespaces: true
+allowAllNamespaces: false
 
 roleBindings:
-  kind: User
-  name: jordilaforge
-  clusterRoleName: admin
+  - kind: User
+    name: jordilaforge
+    clusterRoleName: admin
 
 clusterResourceWhitelist:
 
