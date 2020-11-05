@@ -4,15 +4,16 @@ repository: https://github.com/baloise-incubator/this-or-that-deployment.git
 namespace:
   annotations: {}
   labels:
-    client: philipp
+    client: jordilaforge
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false
 allowAllNamespaces: true
 
 roleBindings:
-#  - groupName: "team1"
-#    clusterRoleName: "admin"
+  kind: User
+  name: jordilaforge
+  clusterRoleName: admin
 
 clusterResourceWhitelist:
 
