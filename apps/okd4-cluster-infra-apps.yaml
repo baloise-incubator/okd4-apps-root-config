@@ -37,7 +37,6 @@ applications:
   kubernetes-oom-event-generator: {}
   test: {}
   keycloak-operator: {}
-  kubevirt-hyperconverged: {}
   elasticsearch-operator: {}
   jaeger-operator: {}
   cert-manager: {}
