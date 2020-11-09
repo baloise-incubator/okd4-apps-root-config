@@ -40,3 +40,4 @@ applications:
   kubevirt-hyperconverged: {}
   elasticsearch-operator: {}
   jaeger-operator: {}
+  cert-manager: {}
