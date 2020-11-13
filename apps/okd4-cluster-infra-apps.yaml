@@ -41,3 +41,4 @@ applications:
   jaeger-operator: {}
   cert-manager: {}
   moon: {}
+  crossplane: {}
