@@ -21,4 +21,5 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications: {}
+applications:
+  sven-goldcard-spring-boot-rest-demo: {}
