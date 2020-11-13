@@ -1,0 +1,24 @@
+repository: https://github.com/baloise-incubator/sven-goldcard-spring-boot-rest-demo-config.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels:
+    client: svene
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: false
+allowAllNamespaces: false
+
+roleBindings:
+- kind: User
+  name: svene
+  clusterRoleName: admin
+
+clusterResourceWhitelist:
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications: {}
