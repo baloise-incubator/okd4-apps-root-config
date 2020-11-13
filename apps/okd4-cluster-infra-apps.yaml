@@ -40,3 +40,4 @@ applications:
   elasticsearch-operator: {}
   jaeger-operator: {}
   cert-manager: {}
+  moon: {}
