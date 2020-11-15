@@ -30,6 +30,7 @@ applications:
   tekton-dashboard: {}
   tekton-chatopshandler: {}
   tekton-pipelines:
+    disableAutoSync: true
     source:
       directory:
         recurse: true
