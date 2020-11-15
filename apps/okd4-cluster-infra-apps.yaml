@@ -29,8 +29,8 @@ applications:
   harbor: {}
   tekton-dashboard: {}
   tekton-chatopshandler: {}
-  tekton-pipelines:
     disableAutoSync: true
+  tekton-pipelines:
     source:
       directory:
         recurse: true
