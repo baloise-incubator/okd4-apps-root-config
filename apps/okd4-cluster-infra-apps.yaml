@@ -28,7 +28,7 @@ applications:
   rook-ceph: {}
   harbor: {}
   tekton-dashboard: {}
-  tekton-chatopshandler: {}
+  tekton-chatopshandler:
     disableAutoSync: true
   tekton-pipelines:
     source:
