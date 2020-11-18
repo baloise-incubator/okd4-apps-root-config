@@ -24,3 +24,4 @@ applications:
   gitops-nginx-demo-test: {}
   octopus: {}
   envoy-tls: {}
+  gitops-nginx-demo-a6239b0a-preview: {}
