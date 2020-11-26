@@ -44,3 +44,4 @@ applications:
   moon: {}
   crossplane: {}
   postgres-operator: {}
+  postgres-operator-usagetest: {}
