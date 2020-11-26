@@ -43,3 +43,4 @@ applications:
   cert-manager: {}
   moon: {}
   crossplane: {}
+  postgres-operator: {}
