@@ -36,7 +36,6 @@ applications:
         recurse: true
   openshift-acme: {}
   kubernetes-oom-event-generator: {}
-  test: {}
   keycloak-operator: {}
   elasticsearch-operator: {}
   jaeger-operator: {}
@@ -45,4 +44,3 @@ applications:
   crossplane: {}
   postgres-operator: {}
   postgres-operator-usagetest: {}
-  demo123: {}
