@@ -45,3 +45,4 @@ applications:
   crossplane: {}
   postgres-operator: {}
   postgres-operator-usagetest: {}
+  demo123: {}
