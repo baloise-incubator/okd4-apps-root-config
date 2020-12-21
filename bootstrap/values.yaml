@@ -12,3 +12,4 @@ bootstrap:
  - name: okd4-bal-code-camp-cat-apps
  - name: okd4-this-or-that-apps
  - name: sven-goldcard-spring-boot-rest-demo-config
+ - name: okd4-yannickholzenkamp-apps
