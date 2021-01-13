@@ -25,3 +25,4 @@ applications:
   octopus: {}
   envoy-tls: {}
   gitops-nginx-demo-a6239b0a-preview: {}
+  gitops-nginx-demo-e326a852-preview: {}
