@@ -49,3 +49,4 @@ applications:
   jenkins: {}
   nexus-operator: {}
   nexus: {}
+  sonarqube: {}
