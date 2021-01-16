@@ -46,3 +46,4 @@ applications:
   postgres-operator-usagetest: {}
   demo123: {}
   jenkins-operator: {}
+  jenkins: {}
