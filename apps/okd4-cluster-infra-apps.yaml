@@ -47,3 +47,4 @@ applications:
   demo123: {}
   jenkins-operator: {}
   jenkins: {}
+  nexus-operator: {}
