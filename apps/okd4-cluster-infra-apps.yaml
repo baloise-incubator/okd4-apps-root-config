@@ -48,3 +48,4 @@ applications:
   jenkins-operator: {}
   jenkins: {}
   nexus-operator: {}
+  nexus: {}
