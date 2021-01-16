@@ -45,3 +45,4 @@ applications:
   postgres-operator: {}
   postgres-operator-usagetest: {}
   demo123: {}
+  jenkins-operator: {}
