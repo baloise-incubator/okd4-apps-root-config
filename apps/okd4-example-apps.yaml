@@ -27,3 +27,4 @@ applications:
   gitops-nginx-demo-a6239b0a-preview: {}
   gitops-nginx-demo-e326a852-preview: {}
   gitops-nginx-demo-bb56843c-preview: {}
+  luxembourg-test: {}
