@@ -50,3 +50,4 @@ applications:
   nexus-operator: {}
   nexus: {}
   sonarqube: {}
+  kubecost: {}
