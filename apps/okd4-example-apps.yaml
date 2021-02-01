@@ -22,3 +22,4 @@ namespaceResourceBlacklist:
 
 applications:
   gitops-nginx-demo-test: {}
+  demo-test: {}
