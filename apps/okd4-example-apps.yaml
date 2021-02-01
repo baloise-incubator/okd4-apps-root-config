@@ -24,6 +24,5 @@ applications:
   gitops-nginx-demo-test: {}
   octopus: {}
   envoy-tls: {}
-  gitops-nginx-demo-bb56843c-preview: {}
   luxembourg-test: {}
   luxembourg-int: {}
