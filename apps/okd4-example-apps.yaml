@@ -22,7 +22,3 @@ namespaceResourceBlacklist:
 
 applications:
   gitops-nginx-demo-test: {}
-  octopus: {}
-  envoy-tls: {}
-  luxembourg-test: {}
-  luxembourg-int: {}
