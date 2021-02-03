@@ -37,17 +37,13 @@ applications:
   openshift-acme: {}
   kubernetes-oom-event-generator: {}
   keycloak-operator: {}
-  elasticsearch-operator: {}
-  jaeger-operator: {}
   cert-manager: {}
   moon: {}
   crossplane: {}
   postgres-operator: {}
   postgres-operator-usagetest: {}
-  demo123: {}
   jenkins-operator: {}
   jenkins: {}
   nexus-operator: {}
   nexus: {}
   sonarqube: {}
-  kubecost: {}
