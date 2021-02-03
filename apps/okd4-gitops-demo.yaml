@@ -14,4 +14,4 @@ roleBindings:
   name: gitops-demo-user
 
 applications:
-  gitops-demo: {}
+  gitops-test: {}
