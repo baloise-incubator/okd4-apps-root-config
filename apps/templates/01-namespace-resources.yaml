@@ -52,7 +52,6 @@ metadata:
 spec:
   ingress:
     - from:
-        - podSelector: {}
         - namespaceSelector:
             matchLabels:
               network.openshift.io/policy-group: ingress
