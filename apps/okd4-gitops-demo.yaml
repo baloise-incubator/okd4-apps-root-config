@@ -16,3 +16,4 @@ roleBindings:
 applications:
   gitops-test: {}
   gitops-int: {}
+  gitops-acc: {}
