@@ -1,0 +1,16 @@
+repository: https://github.com/baloise-incubator/okd4-gitops-demo.git
+namespace:
+  annotations: {}
+  labels:
+    owner: gitops-demo
+
+enableDefaultNetworkPolicy: true
+enableDefaultLimitRange: true
+allowAllNamespaces: false
+
+roleBindings:
+  - clusterRoleName: "admin"
+    kind: "User"
+    name: "gitops-demo-user"
+
+applications: {}
