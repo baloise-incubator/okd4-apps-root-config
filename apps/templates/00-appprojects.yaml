@@ -20,7 +20,11 @@ spec:
 {{- end }}
 {{- end }}
 {{- end }}
+{{- if .Values.clusterResourceWhitelist }}
   clusterResourceWhitelist:
-{{- toYaml .Values.clusterResourceWhitelist | nindent 4 }}
+  {{- toYaml .Values.clusterResourceWhitelist | nindent 4 }}
+{{- end }}
+{{- if .Values.namespaceResourceBlacklist }}
   namespaceResourceBlacklist:
 {{- toYaml .Values.namespaceResourceBlacklist | nindent 4 -}}
+{{- end }}
