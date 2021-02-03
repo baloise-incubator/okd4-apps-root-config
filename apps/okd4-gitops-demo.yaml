@@ -9,8 +9,9 @@ enableDefaultLimitRange: true
 allowAllNamespaces: false
 
 roleBindings:
-  - clusterRoleName: "admin"
-    kind: "User"
-    name: "gitops-demo-user"
+- clusterRoleName: admin
+  kind: User
+  name: gitops-demo-user
 
-applications: {}
+applications:
+  gitops-demo: {}
