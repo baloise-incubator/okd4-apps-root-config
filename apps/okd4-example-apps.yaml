@@ -24,3 +24,4 @@ applications:
   gitops-nginx-demo-test: {}
   demo-test: {}
   gitops-nginx-demo-c7003101-preview: {}
+  gitops-nginx-demo-5c774108-preview: {}
