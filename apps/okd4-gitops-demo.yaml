@@ -17,4 +17,3 @@ roleBindings:
 # List of directories inside config repository
 applications:
   gitops-test: {}
-  gitops-acc: {}
