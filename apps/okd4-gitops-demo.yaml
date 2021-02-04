@@ -4,6 +4,7 @@ namespace:
   labels:
     owner: gitops-demo
 
+# Default resources
 enableDefaultNetworkPolicy: true
 enableDefaultLimitRange: true
 allowAllNamespaces: false
@@ -13,6 +14,7 @@ roleBindings:
   kind: User
   name: gitops-demo-user
 
+# List of directories inside config repository
 applications:
   gitops-test: {}
   gitops-acc: {}
