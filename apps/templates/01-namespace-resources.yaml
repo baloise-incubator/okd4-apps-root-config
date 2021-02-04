@@ -95,10 +95,5 @@ subjects:
     kind: {{ .kind }}
     name: {{ .name }}
 {{ end }}
-{{- $monNsName := printf "%s-%s" ( trimSuffix "-apps" $.Release.Name ) "monitoring" -}}
-{{- if eq $key $monNsName }}
----
-{{ template "monitoring.prometheus" $ }}
-{{ end }}
 {{ end }}
 {{ end }}
