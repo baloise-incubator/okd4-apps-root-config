@@ -47,3 +47,4 @@ applications:
   nexus-operator: {}
   nexus: {}
   sonarqube: {}
+  hashicorp-vault: {}
