@@ -48,3 +48,4 @@ applications:
   nexus: {}
   sonarqube: {}
   hashicorp-vault: {}
+  cyberark-conjur: {}
