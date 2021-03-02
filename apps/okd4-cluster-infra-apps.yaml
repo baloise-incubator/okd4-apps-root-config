@@ -49,3 +49,4 @@ applications:
   sonarqube: {}
   hashicorp-vault: {}
   cyberark-conjur: {}
+  argo-workflows: {}
