@@ -50,3 +50,4 @@ applications:
   hashicorp-vault: {}
   cyberark-conjur: {}
   argo-workflows: {}
+  bitbucket: {}
