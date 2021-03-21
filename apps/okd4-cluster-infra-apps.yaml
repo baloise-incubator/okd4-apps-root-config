@@ -52,3 +52,4 @@ applications:
   argo-workflows: {}
   bitbucket: {}
   bank-vault-operator: {}
+  bank-vault-secrets-webhook: {}
