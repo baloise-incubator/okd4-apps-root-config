@@ -51,3 +51,4 @@ applications:
   cyberark-conjur: {}
   argo-workflows: {}
   bitbucket: {}
+  bank-vault-operator: {}
