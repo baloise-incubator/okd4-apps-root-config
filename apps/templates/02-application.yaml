@@ -28,6 +28,8 @@ spec:
 {{- end }}
 {{- if not $disableAutoSync }}
   syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
     automated:
       prune: {{ default true $automatedPrune }}
       selfHeal: {{ default true $selfHeal }}
