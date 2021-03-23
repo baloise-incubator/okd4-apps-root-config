@@ -52,3 +52,4 @@ applications:
   bitbucket: {}
   bank-vault-operator: {}
   bank-vault-secrets-webhook: {}
+  bank-vault: {}
