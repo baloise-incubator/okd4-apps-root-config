@@ -14,3 +14,4 @@ bootstrap:
  - name: sven-goldcard-spring-boot-rest-demo-config
  - name: okd4-yannickholzenkamp-apps
  - name: okd4-gitops-demo
+ - name: okd4-patrick-apps
