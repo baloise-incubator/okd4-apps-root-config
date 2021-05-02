@@ -53,4 +53,3 @@ applications:
   bank-vault-operator: {}
   bank-vault-secrets-webhook: {}
   bank-vault: {}
-  noobaa: {}
