@@ -53,3 +53,4 @@ applications:
   bank-vault-secrets-webhook: {}
   bank-vault: {}
   incubator-service-mesh: {}
+  devops-stack: {}
