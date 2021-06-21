@@ -47,7 +47,6 @@ applications:
   nexus-operator: {}
   nexus: {}
   sonarqube: {}
-  hashicorp-vault: {}
   argo-workflows: {}
   bitbucket: {}
   bank-vault-operator: {}
