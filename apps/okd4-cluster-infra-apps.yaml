@@ -38,7 +38,7 @@ applications:
   kubernetes-oom-event-generator: {}
   keycloak-operator: {}
   cert-manager: {}
-  moon: {}
+  moon-test: {}
   crossplane: {}
   postgres-operator: {}
   postgres-operator-usagetest: {}
