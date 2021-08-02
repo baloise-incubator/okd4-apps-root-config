@@ -25,3 +25,4 @@ applications:
   sync-apps-test: {}
   sync-apps-int: {}
   gitops-nginx-demo-joachimprinzbach-patch-2-48f31385-preview: {}
+  gitops-nginx-demo-e326a852-preview: {}
