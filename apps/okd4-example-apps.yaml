@@ -22,6 +22,5 @@ namespaceResourceBlacklist:
 
 applications:
   gitops-nginx-demo-test: {}
-  gitops-nginx-demo-a5bf711c-preview: {}
   sync-apps-test: {}
   sync-apps-int: {}
