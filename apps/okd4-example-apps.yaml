@@ -24,3 +24,4 @@ applications:
   gitops-nginx-demo-test: {}
   sync-apps-test: {}
   sync-apps-int: {}
+  gitops-nginx-demo-c7003101-preview: {}
