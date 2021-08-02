@@ -42,8 +42,6 @@ applications:
   crossplane: {}
   postgres-operator: {}
   postgres-operator-usagetest: {}
-  jenkins-operator: {}
-  jenkins: {}
   nexus-operator: {}
   nexus: {}
   sonarqube: {}
