@@ -4,7 +4,6 @@ bootstrap:
  - name: okd4-cluster-resources
  - name: okd4-example-apps
  - name: okd4-joachim-apps
- - name: okd4-christian-apps
  - name: okd4-luechtdiode-apps
  - name: pizzeria-ristorante
  - name: codecamp
