@@ -4,6 +4,7 @@
 {{- $path := default $key .path }}
 {{- $source := default false .source }}
 {{- $disableAutoSync := default false .disableAutoSync }}
+{{- $enableHelmKustomize := default false .enableHelmKustomize }}
 {{- $automatedPrune := default true .automatedPrune }}
 {{- $selfHeal := default true .selfHeal }}
 {{- if not $disabled }}
@@ -25,6 +26,10 @@ spec:
     repoURL: {{ $.Values.repository }}
 {{ if $source -}}
 {{- toYaml $source | indent 4 }}
+{{- end }}
+{{- if $enableHelmKustomize }}
+    plugin:
+      name: kustomized-helm
 {{- end }}
 {{- if not $disableAutoSync }}
   syncPolicy:
