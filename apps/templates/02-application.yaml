@@ -4,7 +4,7 @@
 {{- $path := default $key .path }}
 {{- $source := default false .source }}
 {{- $disableAutoSync := default false .disableAutoSync }}
-{{- $enableKustomize := default false .enableKustomize }}
+{{- $enableHelmKustomize := default false .enableHelmKustomize }}
 {{- $automatedPrune := default true .automatedPrune }}
 {{- $selfHeal := default true .selfHeal }}
 {{- if not $disabled }}
@@ -27,7 +27,7 @@ spec:
 {{ if $source -}}
 {{- toYaml $source | indent 4 }}
 {{- end }}
-{{- if $enableKustomize }}
+{{- if $enableHelmKustomize }}
     plugin:
       name: kustomized-helm
 {{- end }}
