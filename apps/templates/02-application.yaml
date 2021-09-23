@@ -27,6 +27,8 @@ spec:
 {{- toYaml $source | indent 4 }}
 {{- end }}
 {{- if not $disableAutoSync }}
+    plugin:
+      name: kustomized-helm
   syncPolicy:
     syncOptions:
       - ApplyOutOfSyncOnly=true
