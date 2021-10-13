@@ -23,6 +23,8 @@ roleBindings:
 
 
 clusterResourceWhitelist:
+  - group: user.openshift.io
+    kind: Group
 
 namespaceResourceBlacklist:
 #  - group: 'apps'
