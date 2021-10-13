@@ -1,0 +1,31 @@
+repository: https://github.com/baloise-incubator/code-camp-apps.git
+namespace:
+  annotations: {}
+  labels:
+    client: code-camp
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: false
+
+roleBindings:
+- name: luechtdiode
+  kind: User
+  clusterRoleName: admin
+- name: leubedane
+  kind: User
+  clusterRoleName: admin
+- name: Tiliavir
+  kind: User
+  clusterRoleName: admin
+- name: ArthurNeudeck
+  kind: User
+  clusterRoleName: admin
+
+
+clusterResourceWhitelist:
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications: {}
