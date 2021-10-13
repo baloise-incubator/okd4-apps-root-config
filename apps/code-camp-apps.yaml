@@ -8,19 +8,9 @@ enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false
 
 roleBindings:
-- name: luechtdiode
-  kind: User
+- name: code-camp
+  kind: Group
   clusterRoleName: admin
-- name: leubedane
-  kind: User
-  clusterRoleName: admin
-- name: Tiliavir
-  kind: User
-  clusterRoleName: admin
-- name: ArthurNeudeck
-  kind: User
-  clusterRoleName: admin
-
 
 clusterResourceWhitelist:
   - group: user.openshift.io
