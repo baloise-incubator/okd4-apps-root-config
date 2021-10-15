@@ -24,3 +24,4 @@ applications:
   gitops-nginx-demo-test: {}
   gitops-nginx-demo-demo-preview-163-preview: {}
   baloise-design-system-docs-test: {}
+  edgar: {}
