@@ -13,8 +13,8 @@ roleBindings:
   clusterRoleName: admin
 
 clusterResourceWhitelist:
-  - group: user.openshift.io
-    kind: Group
+- group: user.openshift.io
+  kind: Group
 
 namespaceResourceBlacklist:
 #  - group: 'apps'
@@ -22,3 +22,4 @@ namespaceResourceBlacklist:
 
 applications:
   code-camp-resources: {}
+  mp-wf-quarkus: {}
