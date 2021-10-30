@@ -23,4 +23,4 @@ namespaceResourceBlacklist:
 applications:
   code-camp-resources: {}
   mp-wf-quarkus: {}
-  caml-k-resources: {}
+  camel-k-resources: {}
