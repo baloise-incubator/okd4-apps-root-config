@@ -52,3 +52,4 @@ applications:
   bank-vault: {}
   incubator-service-mesh: {}
   devops-stack: {}
+  camel-k: {}
