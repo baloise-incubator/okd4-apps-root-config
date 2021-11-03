@@ -3,7 +3,7 @@ repository: https://github.com/yannickholzenkamp/okd4-deployment-configuration.g
 #argocdNamespace: "argocd"
 #server: "https://kubernetes.default.svc"
 namespace:
-  annotations: { }
+  annotations: {}
   labels:
     client: yannickholzenkamp
 
@@ -22,5 +22,6 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  tschau-sepp-backend: { }
-  tschau-sepp-frontend: { }
+  tschau-sepp-backend: {}
+  tschau-sepp-frontend: {}
+  fake-news-api: {}
