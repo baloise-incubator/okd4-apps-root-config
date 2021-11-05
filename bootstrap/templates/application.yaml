@@ -6,7 +6,7 @@ metadata:
   name: {{ .name }}-apps
   namespace: {{ default "argocd" $.Values.argocdNamespace }}
   annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: t.me/bal_argo
+    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: https://t.me/bal_argo
 spec:
   destination:
     namespace: {{ default "argocd" $.Values.argocdNamespace }}
