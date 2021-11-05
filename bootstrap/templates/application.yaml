@@ -7,6 +7,7 @@ metadata:
   namespace: {{ default "argocd" $.Values.argocdNamespace }}
   annotations:
     notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: bal_argo
+    notifications.argoproj.io/subscribe.on-sync-succeeded.teams: channelName
 spec:
   destination:
     namespace: {{ default "argocd" $.Values.argocdNamespace }}
