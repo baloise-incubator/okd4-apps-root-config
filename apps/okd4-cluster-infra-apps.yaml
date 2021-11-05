@@ -54,3 +54,4 @@ applications:
   devops-stack: {}
   camel-k: {}
   argo-events: {}
+  some-ns: {}
