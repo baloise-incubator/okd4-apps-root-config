@@ -53,3 +53,4 @@ applications:
   incubator-service-mesh: {}
   devops-stack: {}
   camel-k: {}
+  argo-events: {}
