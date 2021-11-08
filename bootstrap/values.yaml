@@ -15,3 +15,4 @@ bootstrap:
  - name: okd4-gitops-demo
  - name: okd4-patrick-apps
  - name: code-camp-apps
+ - name: okd4-table-tennis-tournament-apps
