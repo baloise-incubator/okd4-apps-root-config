@@ -23,3 +23,4 @@ namespaceResourceBlacklist:
 
 applications:
   ttt-match-management: {}
+  ttt-registration: {}
