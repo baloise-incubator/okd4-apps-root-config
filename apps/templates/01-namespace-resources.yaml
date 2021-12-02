@@ -87,7 +87,7 @@ metadata:
   name: {{ printf "%s-%s" .name .clusterRoleName}}
   namespace: "{{ $key }}"
 roleRef:
-  apiGroup: rbac.authorization.k8s.io
+  apiGroup: {{ default}}rbac.authorization.k8s.io
   kind: ClusterRole
   name: {{ .clusterRoleName }}
 subjects:
