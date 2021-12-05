@@ -41,3 +41,4 @@ applications:
   camel-k: {}
   argo-events: {}
   minio-operator: {}
+  minio: {}
