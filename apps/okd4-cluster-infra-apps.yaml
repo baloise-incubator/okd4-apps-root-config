@@ -38,7 +38,6 @@ applications:
   bank-vault-secrets-webhook: {}
   bank-vault: {}
   devops-stack: {}
-  camel-k: {}
   argo-events: {}
   minio-operator: {}
   minio: {}
