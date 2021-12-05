@@ -39,11 +39,6 @@ applications:
   keycloak-operator: {}
   cert-manager: {}
   moon-test: {}
-  crossplane: {}
-  postgres-operator: {}
-  postgres-operator-usagetest: {}
-  nexus-operator: {}
-  nexus: {}
   sonarqube: {}
   argo-workflows: {}
   bitbucket: {}
@@ -54,4 +49,3 @@ applications:
   devops-stack: {}
   camel-k: {}
   argo-events: {}
-  some-ns: {}
