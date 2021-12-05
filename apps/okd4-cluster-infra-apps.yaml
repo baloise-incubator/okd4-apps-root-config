@@ -45,7 +45,6 @@ applications:
   bank-vault-operator: {}
   bank-vault-secrets-webhook: {}
   bank-vault: {}
-  incubator-service-mesh: {}
   devops-stack: {}
   camel-k: {}
   argo-events: {}
