@@ -27,13 +27,6 @@ applications:
   sealed-secrets: {}
   rook-ceph: {}
   harbor: {}
-  tekton-dashboard: {}
-  tekton-chatopshandler:
-    disableAutoSync: true
-  tekton-pipelines:
-    source:
-      directory:
-        recurse: true
   openshift-acme: {}
   kubernetes-oom-event-generator: {}
   keycloak-operator: {}
@@ -41,7 +34,6 @@ applications:
   moon-test: {}
   sonarqube: {}
   argo-workflows: {}
-  bitbucket: {}
   bank-vault-operator: {}
   bank-vault-secrets-webhook: {}
   bank-vault: {}
