@@ -42,4 +42,3 @@ applications:
   minio-operator: {}
   minio: {}
   camel-k-operator: {}
-  harbor-operator: {}
