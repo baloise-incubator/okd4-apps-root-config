@@ -28,3 +28,4 @@ applications:
   baloise-design-system-docs-test: {}
   edgar: {}
   baloise-design-system-docs-int: {}
+  app-deployment-example: {}
