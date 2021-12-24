@@ -44,3 +44,4 @@ applications:
   camel-k-operator: {}
   jfrog-platform: {}
   app-operator: {}
+  postgresql-operator: {}
