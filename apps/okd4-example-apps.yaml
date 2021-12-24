@@ -29,3 +29,4 @@ applications:
   edgar: {}
   baloise-design-system-docs-int: {}
   app-deployment-example: {}
+  postgresql-operator-demo: {}
