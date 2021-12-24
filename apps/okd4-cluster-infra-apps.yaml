@@ -43,3 +43,4 @@ applications:
   minio: {}
   camel-k-operator: {}
   jfrog-platform: {}
+  app-operator: {}
