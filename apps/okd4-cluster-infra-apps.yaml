@@ -46,3 +46,4 @@ applications:
   app-operator: {}
   postgresql-operator: {}
   awx-operator: {}
+  awx: {}
