@@ -45,5 +45,4 @@ applications:
   jfrog-platform: {}
   app-operator: {}
   postgresql-operator: {}
-  awx-operator: {}
   awx: {}
