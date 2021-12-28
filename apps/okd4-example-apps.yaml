@@ -31,3 +31,4 @@ applications:
   app-deployment-example: {}
   postgresql-example: {}
   crunchy-example: {}
+  vm-cluster-example: {}
