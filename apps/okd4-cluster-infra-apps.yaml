@@ -47,3 +47,4 @@ applications:
   postgresql-operator: {}
   awx: {}
   vmc-operator: {}
+  kubevirt-data-volumes: {}
