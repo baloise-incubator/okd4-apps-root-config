@@ -33,3 +33,4 @@ applications:
   crunchy-example: {}
   vm-cluster-example: {}
   automation-vm-example: {}
+  vm-automation-demo: {}
