@@ -32,5 +32,4 @@ applications:
   postgresql-example: {}
   crunchy-example: {}
   vm-cluster-example: {}
-  jttc-vm-example: {}
   automation-vm-example: {}
