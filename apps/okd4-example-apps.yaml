@@ -32,3 +32,4 @@ applications:
   postgresql-example: {}
   crunchy-example: {}
   vm-cluster-example: {}
+  vm-community-demo: {}
