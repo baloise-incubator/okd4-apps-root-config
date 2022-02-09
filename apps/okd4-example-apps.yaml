@@ -31,3 +31,4 @@ applications:
   postgresql-example: {}
   crunchy-example: {}
   vm-cluster-example: {}
+  reloader-demo: {}
