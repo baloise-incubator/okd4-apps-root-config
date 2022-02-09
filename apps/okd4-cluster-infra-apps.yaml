@@ -48,3 +48,4 @@ applications:
   awx: {}
   vmc-operator: {}
   kubevirt-data-volumes: {}
+  reloader: {}
