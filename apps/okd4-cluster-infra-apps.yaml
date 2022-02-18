@@ -50,4 +50,4 @@ applications:
   kubevirt-data-volumes: {}
   reloader: {}
   pixie:
-    autoSync: false
+    disableAutoSync : true
