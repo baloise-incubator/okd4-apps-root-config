@@ -49,4 +49,5 @@ applications:
   vmc-operator: {}
   kubevirt-data-volumes: {}
   reloader: {}
-  pixie: {}
+  pixie:
+    autoSync: false
