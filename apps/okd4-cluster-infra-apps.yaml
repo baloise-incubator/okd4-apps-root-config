@@ -42,7 +42,6 @@ applications:
   minio-operator: {}
   minio: {}
   camel-k-operator: {}
-  jfrog-platform: {}
   app-operator: {}
   postgresql-operator: {}
   awx: {}
@@ -50,4 +49,4 @@ applications:
   kubevirt-data-volumes: {}
   reloader: {}
   pixie:
-    disableAutoSync : true
+    disableAutoSync: true
