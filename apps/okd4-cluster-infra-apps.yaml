@@ -31,22 +31,12 @@ applications:
   kubernetes-oom-event-generator: {}
   keycloak-operator: {}
   cert-manager: {}
-  moon-test: {}
-  sonarqube: {}
   argo-workflows: {}
   bank-vault-operator: {}
   bank-vault-secrets-webhook: {}
   bank-vault: {}
   devops-stack: {}
-  argo-events: {}
-  minio-operator: {}
-  minio: {}
   camel-k-operator: {}
-  app-operator: {}
   postgresql-operator: {}
-  awx: {}
-  vmc-operator: {}
-  kubevirt-data-volumes: {}
   reloader: {}
-  pixie:
-    disableAutoSync: true
+  jfrog-platform: {}
