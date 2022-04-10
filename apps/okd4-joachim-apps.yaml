@@ -21,6 +21,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  joachim-demo-static: {}
-  dialogflow-api: {}
+applications: {}

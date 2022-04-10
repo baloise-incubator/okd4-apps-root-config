@@ -20,5 +20,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  kutuapp-test: {}
+applications: {}

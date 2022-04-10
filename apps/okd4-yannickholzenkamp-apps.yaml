@@ -21,7 +21,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  tschau-sepp-backend: {}
-  tschau-sepp-frontend: {}
-  fake-news-api: {}
+applications: {}

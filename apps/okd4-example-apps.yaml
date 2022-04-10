@@ -22,6 +22,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  gitops-nginx-demo-test: {}
-  baloise-design-system-docs-test: {}
+applications: {}

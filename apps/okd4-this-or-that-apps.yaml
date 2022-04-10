@@ -21,5 +21,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  this-or-that: {}
+applications: {}
