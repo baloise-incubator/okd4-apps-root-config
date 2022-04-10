@@ -40,4 +40,3 @@ applications:
   postgresql-operator: {}
   reloader: {}
   jfrog-platform: {}
-  jfrog-artifactory-ha: {}
