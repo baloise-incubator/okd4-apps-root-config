@@ -24,11 +24,4 @@ namespaceResourceBlacklist:
 
 applications:
   gitops-nginx-demo-test: {}
-  gitops-nginx-demo-demo-preview-163-preview: {}
   baloise-design-system-docs-test: {}
-  baloise-design-system-docs-int: {}
-  app-deployment-example: {}
-  postgresql-example: {}
-  crunchy-example: {}
-  vm-cluster-example: {}
-  reloader-demo: {}
