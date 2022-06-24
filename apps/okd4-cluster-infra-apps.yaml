@@ -39,4 +39,3 @@ applications:
   camel-k-operator: {}
   postgresql-operator: {}
   reloader: {}
-  jfrog-platform: {}
