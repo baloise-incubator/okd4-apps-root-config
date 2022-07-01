@@ -39,3 +39,4 @@ applications:
   camel-k-operator: {}
   postgresql-operator: {}
   reloader: {}
+  jupyterhub: {}
