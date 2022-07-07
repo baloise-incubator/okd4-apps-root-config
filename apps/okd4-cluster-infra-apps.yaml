@@ -40,4 +40,4 @@ applications:
   postgresql-operator: {}
   reloader: {}
   jupyterhub: {}
-  incident-ssp-test: {}
+  ssp-test: {}
