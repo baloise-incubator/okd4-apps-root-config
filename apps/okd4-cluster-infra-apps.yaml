@@ -42,3 +42,4 @@ applications:
   jupyterhub: {}
   ssp: {}
   contour-operator: {}
+  contour: {}
