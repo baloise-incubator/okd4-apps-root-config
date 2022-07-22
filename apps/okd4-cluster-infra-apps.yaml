@@ -41,5 +41,4 @@ applications:
   reloader: {}
   jupyterhub: {}
   ssp: {}
-  contour-operator: {}
-  contour: {}
+  projectcontour: {}
