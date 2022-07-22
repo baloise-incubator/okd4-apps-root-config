@@ -41,3 +41,4 @@ applications:
   reloader: {}
   jupyterhub: {}
   ssp: {}
+  gateway-system: {}
