@@ -36,4 +36,4 @@ applications:
   devops-stack: {}
   camel-k-operator: {}
   reloader: {}
-  ssp: {}
+  external-dns: {}
