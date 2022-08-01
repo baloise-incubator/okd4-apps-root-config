@@ -27,9 +27,7 @@ applications:
   sealed-secrets: {}
   rook-ceph: {}
   harbor: {}
-  openshift-acme: {}
   kubernetes-oom-event-generator: {}
-  keycloak-operator: {}
   cert-manager: {}
   argo-workflows: {}
   bank-vault-operator: {}
@@ -37,8 +35,5 @@ applications:
   bank-vault: {}
   devops-stack: {}
   camel-k-operator: {}
-  postgresql-operator: {}
   reloader: {}
-  jupyterhub: {}
   ssp: {}
-  projectcontour: {}
