@@ -37,3 +37,4 @@ applications:
   camel-k-operator: {}
   reloader: {}
   external-dns: {}
+  devspaces: {}
