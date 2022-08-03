@@ -39,3 +39,4 @@ applications:
   external-dns: {}
   devspaces: {}
   artifactory-oss: {}
+  artifactory-jcr: {}
