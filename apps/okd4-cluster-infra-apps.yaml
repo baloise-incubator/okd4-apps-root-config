@@ -38,3 +38,4 @@ applications:
   reloader: {}
   external-dns: {}
   devspaces: {}
+  artifactory-oss: {}
