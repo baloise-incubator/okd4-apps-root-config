@@ -39,3 +39,4 @@ applications:
   devspaces: {}
   artifactory-oss: {}
   artifactory-jcr: {}
+  external-secrets: {}
