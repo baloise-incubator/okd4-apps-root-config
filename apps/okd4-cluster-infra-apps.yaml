@@ -40,3 +40,4 @@ applications:
   artifactory-oss: {}
   artifactory-jcr: {}
   external-secrets: {}
+  vault: {}
