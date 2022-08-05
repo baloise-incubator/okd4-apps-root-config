@@ -32,7 +32,6 @@ applications:
   argo-workflows: {}
   bank-vault-operator: {}
   bank-vault-secrets-webhook: {}
-  bank-vault: {}
   devops-stack: {}
   camel-k-operator: {}
   reloader: {}
