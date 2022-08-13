@@ -41,3 +41,4 @@ applications:
   artifactory-jcr: {}
   external-secrets: {}
   vault: {}
+  ssp-test: {}
