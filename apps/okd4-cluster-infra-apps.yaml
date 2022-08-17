@@ -43,4 +43,3 @@ applications:
   vault: {}
   ssp-test: {}
   kong-system: {}
-  kong: {}
