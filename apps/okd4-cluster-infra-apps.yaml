@@ -42,3 +42,4 @@ applications:
   external-secrets: {}
   vault: {}
   ssp-test: {}
+  kong-system: {}
