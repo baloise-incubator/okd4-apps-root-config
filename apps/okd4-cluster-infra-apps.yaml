@@ -24,23 +24,9 @@ namespaceResourceBlacklist:
 
 applications:
   argocd: {}
-  sealed-secrets: {}
-  rook-ceph: {}
-  harbor: {}
-  kubernetes-oom-event-generator: {}
   cert-manager: {}
-  argo-workflows: {}
-  bank-vault-operator: {}
-  bank-vault-secrets-webhook: {}
-  devops-stack: {}
-  camel-k-operator: {}
-  reloader: {}
   external-dns: {}
-  devspaces: {}
-  artifactory-oss: {}
-  artifactory-jcr: {}
-  external-secrets: {}
-  vault: {}
-  ssp-test: {}
-  kong-system: {}
-  wso2-apim: {}
+  kubernetes-oom-event-generator: {}
+  reloader: {}
+  rook-ceph: {}
+  sealed-secrets: {}

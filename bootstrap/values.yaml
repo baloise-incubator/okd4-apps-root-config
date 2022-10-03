@@ -2,14 +2,14 @@ repository: https://github.com/baloise-incubator/okd4-apps-root-config.git
 bootstrap:
  - name: okd4-cluster-infra-apps
  - name: okd4-cluster-resources
- - name: okd4-example-apps
- - name: okd4-joachim-apps
- - name: okd4-luechtdiode-apps
- - name: pizzeria-ristorante
- - name: okd4-this-or-that-apps
- - name: sven-goldcard-spring-boot-rest-demo-config
- - name: okd4-yannickholzenkamp-apps
- - name: okd4-gitops-demo
- - name: okd4-patrick-apps
- - name: code-camp-apps
- - name: okd4-table-tennis-tournament-apps
+# - name: okd4-example-apps
+# - name: okd4-joachim-apps
+# - name: okd4-luechtdiode-apps
+# - name: pizzeria-ristorante
+# - name: okd4-this-or-that-apps
+# - name: sven-goldcard-spring-boot-rest-demo-config
+# - name: okd4-yannickholzenkamp-apps
+# - name: okd4-gitops-demo
+# - name: okd4-patrick-apps
+# - name: code-camp-apps
+# - name: okd4-table-tennis-tournament-apps
