@@ -30,5 +30,5 @@ applications:
   external-secrets: {}
   kubernetes-oom-event-generator: {}
   reloader: {}
-#  rook-ceph: {}
+  rook-ceph: {}
   sealed-secrets: {}
