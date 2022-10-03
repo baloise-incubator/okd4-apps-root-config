@@ -23,10 +23,12 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
+  akeyless-vault: {}
   argocd: {}
   cert-manager: {}
   external-dns: {}
+  external-secrets: {}
   kubernetes-oom-event-generator: {}
   reloader: {}
-  rook-ceph: {}
+#  rook-ceph: {}
   sealed-secrets: {}
