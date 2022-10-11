@@ -33,3 +33,4 @@ applications:
   rook-ceph: {}
   sealed-secrets: {}
   harbor: {}
+  devops-stack: {}
