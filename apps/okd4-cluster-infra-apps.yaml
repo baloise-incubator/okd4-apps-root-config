@@ -32,3 +32,4 @@ applications:
   reloader: {}
   rook-ceph: {}
   sealed-secrets: {}
+  harbor: {}
