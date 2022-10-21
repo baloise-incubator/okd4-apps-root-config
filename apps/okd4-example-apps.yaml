@@ -26,3 +26,4 @@ applications:
   baloise-design-system-docs-test: {}
   gitops-nginx-demo-test: {}
   bitbucketserver-test: {}
+  example-test: {}
