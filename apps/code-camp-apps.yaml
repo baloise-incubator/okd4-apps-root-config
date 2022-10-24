@@ -21,7 +21,6 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  codimd: {}
   mp-wf-quarkus: {}
   camel-k-resources: {}
   code-camp-resources: {}
