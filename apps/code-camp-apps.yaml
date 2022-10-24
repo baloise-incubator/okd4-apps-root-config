@@ -20,4 +20,8 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications: {}
+applications:
+  codimd: {}
+  mp-wf-quarkus: {}
+  camel-k-resources: {}
+  code-camp-resources: {}
