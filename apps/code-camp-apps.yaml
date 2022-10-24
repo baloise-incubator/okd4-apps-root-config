@@ -24,3 +24,4 @@ applications:
   mp-wf-quarkus: {}
   camel-k-resources: {}
   code-camp-resources: {}
+  clojure-game: {}
