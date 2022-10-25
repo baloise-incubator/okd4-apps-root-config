@@ -25,3 +25,4 @@ applications:
   camel-k-resources: {}
   code-camp-resources: {}
   clojure-game: {}
+  flux01: {}
