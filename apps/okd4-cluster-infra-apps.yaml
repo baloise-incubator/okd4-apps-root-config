@@ -36,3 +36,4 @@ applications:
   devops-stack: {}
   argo-workflows: {}
   argo-events: {}
+  infra-minio-operator: {}
