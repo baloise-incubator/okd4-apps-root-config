@@ -35,3 +35,4 @@ applications:
   harbor: {}
   devops-stack: {}
   argo-workflows: {}
+  argo-events: {}
