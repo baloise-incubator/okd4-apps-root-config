@@ -34,3 +34,4 @@ applications:
   sealed-secrets: {}
   harbor: {}
   devops-stack: {}
+  argo-workflows: {}
