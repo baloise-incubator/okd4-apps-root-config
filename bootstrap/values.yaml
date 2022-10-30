@@ -4,6 +4,7 @@ bootstrap:
  - name: okd4-cluster-resources
  - name: okd4-example-apps
  - name: code-camp-apps
+ - name: okd4-table-tennis-tournament-apps
 # - name: okd4-joachim-apps
 # - name: okd4-luechtdiode-apps
 # - name: pizzeria-ristorante
@@ -12,4 +13,3 @@ bootstrap:
 # - name: okd4-yannickholzenkamp-apps
 # - name: okd4-gitops-demo
 # - name: okd4-patrick-apps
-# - name: okd4-table-tennis-tournament-apps
