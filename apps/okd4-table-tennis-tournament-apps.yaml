@@ -22,4 +22,5 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  ttt-match-management: {}
+#  ttt-match-management: {}
+  ttt-registration: {}
