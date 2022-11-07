@@ -1,32 +1,33 @@
-repository: https://github.com/baloise-incubator/okd4-example-apps.git
-#argocdNamespace: "argocd"
-#server: "https://kubernetes.default.svc"
-namespace:
-  annotations: {}
-  labels:
-    client: example
-
-enableDefaultNetworkPolicy: false
-enableDefaultLimitRange: false
-allowAllNamespaces: true
-
-roleBindings:
-#  - groupName: "team1"
-#    clusterRoleName: "admin"
-
-clusterResourceWhitelist:
-- group: '*'
-  kind: '*'
-
-namespaceResourceBlacklist:
-#  - group: 'apps'
-#    kind: 'DaemonSet'
-
-applications:
-  baloise-design-system-docs-test:
-    customAppConfig:
-  gitops-nginx-demo-test:
-    customAppConfig:
-      test-code: "mod-by-gitopscli-5.4.2-rc1"
-  gitops-nginx-demo-int:
-    customAppConfig:
+config:
+  repository: https://github.com/baloise-incubator/okd4-example-apps.git
+  #argocdNamespace: "argocd"
+  #server: "https://kubernetes.default.svc"
+  namespace:
+    annotations: {}
+    labels:
+      client: example
+  
+  enableDefaultNetworkPolicy: false
+  enableDefaultLimitRange: false
+  allowAllNamespaces: true
+  
+  roleBindings:
+  #  - groupName: "team1"
+  #    clusterRoleName: "admin"
+  
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  
+  namespaceResourceBlacklist:
+  #  - group: 'apps'
+  #    kind: 'DaemonSet'
+  
+  applications:
+    baloise-design-system-docs-test:
+      customAppConfig:
+    gitops-nginx-demo-test:
+      customAppConfig:
+        test-code: "mod-by-gitopscli-5.4.2-rc1"
+    gitops-nginx-demo-int:
+      customAppConfig:
