@@ -23,17 +23,31 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  akeyless-vault: {}
-  argocd: {}
-  openshift-cert-manager: {}
-  external-dns: {}
-  external-secrets: {}
-  kubernetes-oom-event-generator: {}
-  reloader: {}
-  rook-ceph: {}
-  sealed-secrets: {}
-  harbor: {}
-  devops-stack: {}
-  argo-workflows: {}
-  argo-events: {}
-  infra-minio-operator: {}
+  akeyless-vault:
+    customAppConfig:
+  argocd:
+    customAppConfig:
+  openshift-cert-manager:
+    customAppConfig:
+  external-dns:
+    customAppConfig:
+  external-secrets:
+    customAppConfig:
+  kubernetes-oom-event-generator:
+    customAppConfig:
+  reloader:
+    customAppConfig:
+  rook-ceph:
+    customAppConfig:
+  sealed-secrets:
+    customAppConfig:
+  harbor:
+    customAppConfig:
+  devops-stack:
+    customAppConfig:
+  argo-workflows:
+    customAppConfig:
+  argo-events:
+    customAppConfig:
+  infra-minio-operator:
+    customAppConfig:
