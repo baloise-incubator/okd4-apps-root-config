@@ -23,6 +23,10 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  baloise-design-system-docs-test: {}
-  gitops-nginx-demo-test: {}
-  gitops-nginx-demo-int: {}
+  baloise-design-system-docs-test:
+    customAppConfig:
+  gitops-nginx-demo-test:
+    customAppConfig:
+      test-code: "mod-by-gitopscli-5.4.2-rc1"
+  gitops-nginx-demo-int:
+    customAppConfig:
