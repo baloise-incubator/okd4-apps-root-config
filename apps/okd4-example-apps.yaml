@@ -24,12 +24,9 @@ namespaceResourceBlacklist:
 
 applications:
   baloise-design-system-docs-test: {}
-  gitops-nginx-demo-test:
-    customAppConfig:
-      service: gitops
+  gitops-nginx-demo-test: {}
   gitops-nginx-demo-int: {}
   new-app-without-test: {}
-  new-app-test:
+  new-app-empty-test:
     customAppConfig:
-      service: newTenant
-  new-app-empty-test: {}
+      nonEmpty: anymore
