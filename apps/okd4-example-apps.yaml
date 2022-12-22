@@ -23,12 +23,11 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  baloise-design-system-docs-test:
-    customAppConfig:
+  baloise-design-system-docs-test: {}
   gitops-nginx-demo-test:
     customAppConfig:
-      test-code: "mod-by-gitopscli-5.4.2-rc1"
-  gitops-nginx-demo-int:
-    customAppConfig:
+      serviceCode: gitops
+  gitops-nginx-demo-int: {}
   new-app-empty-test:
     customAppConfig:
+      serviceCode: trigger-webhook
