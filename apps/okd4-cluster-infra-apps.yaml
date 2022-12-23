@@ -24,7 +24,8 @@ namespaceResourceBlacklist:
 
 applications:
   akeyless-vault: {}
-  argocd: {}
+  argocd: 
+    disableAutoSync: true
   openshift-cert-manager: {}
   external-dns: {}
   external-secrets: {}
