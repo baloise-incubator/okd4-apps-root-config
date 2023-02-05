@@ -30,7 +30,6 @@ applications:
   external-secrets: {}
   kubernetes-oom-event-generator: {}
   reloader: {}
-  rook-ceph: {}
   sealed-secrets: {}
   harbor: {}
   devops-stack: {}
