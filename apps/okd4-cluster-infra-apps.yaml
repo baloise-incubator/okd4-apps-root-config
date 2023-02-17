@@ -36,4 +36,3 @@ applications:
   argo-workflows: {}
   argo-events: {}
   infra-minio-operator: {}
-  portworx: {}
