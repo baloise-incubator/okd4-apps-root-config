@@ -36,5 +36,5 @@ applications:
   argo-workflows: {}
   argo-events: {}
   infra-minio-operator: {}
-  rook-ceph: {}
+#  rook-ceph: {}
 
