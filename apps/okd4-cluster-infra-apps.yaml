@@ -32,7 +32,7 @@ applications:
   reloader: {}
   sealed-secrets: {}
 #  harbor: {}
-#  devops-stack: {}
+  devops-stack: {}
   argo-workflows: {}
   argo-events: {}
 #  infra-minio-operator: {}
