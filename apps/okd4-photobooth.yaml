@@ -5,7 +5,7 @@ repository: https://github.com/baloise-incubator/photobooth-deployment.git
 namespace:
   annotations: {}
   labels:
-    client: photobooth
+    client: photobooth-code-camp
 
 enableDefaultNetworkPolicy: false
 enableDefaultLimitRange: false
