@@ -34,3 +34,4 @@ applications:
     customAppConfig:
       serviceCode: trigger-webhook
       fancyStuff: yeah
+  photobooth-test: {}
