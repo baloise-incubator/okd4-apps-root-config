@@ -35,6 +35,8 @@ applications:
   devops-stack: {}
   argo-workflows: {}
   argo-events: {}
+  openshift-storage: {}
+  infra-minio-operator: {}
 #  infra-minio-operator: {}
 #  rook-ceph: {}
 
