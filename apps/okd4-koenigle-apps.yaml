@@ -22,3 +22,4 @@ namespaceResourceBlacklist:
 
 applications:
   istio-test: {}
+  koenigle-apps-test: {}
