@@ -1,0 +1,24 @@
+repository: https://github.com/koenigle/okd4-deployment-configuration.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels:
+    client: koenigle
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: true
+allowAllNamespaces: true
+
+roleBindings:
+#  - groupName: "team1"
+#    clusterRoleName: "admin"
+
+clusterResourceWhitelist:
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications:
+  istio-test: {}
