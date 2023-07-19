@@ -38,6 +38,7 @@ applications:
   openshift-storage: {}
   infra-minio-operator: {}
   nexus: {}
+  artifactory: {}
 #  infra-minio-operator: {}
 #  rook-ceph: {}
 
