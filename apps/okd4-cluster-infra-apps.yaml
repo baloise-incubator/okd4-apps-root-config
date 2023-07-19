@@ -37,6 +37,7 @@ applications:
   argo-events: {}
   openshift-storage: {}
   infra-minio-operator: {}
+  nexus: {}
 #  infra-minio-operator: {}
 #  rook-ceph: {}
 
