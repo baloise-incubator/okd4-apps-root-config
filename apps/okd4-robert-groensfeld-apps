@@ -1,0 +1,24 @@
+repository: https://github.com/robert-groensfeld/okd4-rg-apps.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels:
+    client: robert-groensfeld
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: true
+allowAllNamespaces: true
+
+roleBindings:
+#  - groupName: "team1"
+#    clusterRoleName: "admin"
+
+clusterResourceWhitelist:
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications:
+  request-collector: {}

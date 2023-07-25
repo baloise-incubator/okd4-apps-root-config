@@ -15,3 +15,4 @@ bootstrap:
 # - name: okd4-patrick-apps
  - name: okd4-koenigle-apps
  - name: okd4-photobooth
+ - name: okd4-robert-groensfeld-apps
