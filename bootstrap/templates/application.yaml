@@ -8,6 +8,7 @@ metadata:
   annotations:
     notifications.argoproj.io/subscribe.on-sync-failed.telegram: bal_argo
     notifications.argoproj.io/subscribe.on-sync-failed.teams: channelName
+    notifications.argoproj.io/subscribe.on-sync-running.requestcollector: ""
 spec:
   destination:
     namespace: {{ default "argocd" $.Values.argocdNamespace }}
