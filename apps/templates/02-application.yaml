@@ -17,6 +17,8 @@ metadata:
     notifications.argoproj.io/subscribe.on-sync-failed.telegram: bal_argo
     notifications.argoproj.io/subscribe.on-sync-failed.teams: channelName
     notifications.argoproj.io/subscribe.on-sync-succeeded.requestcollector: ""
+    notifications.argoproj.io/subscribe.on-sync-status-unknown.requestcollector: ""
+    notifications.argoproj.io/subscribe.on-sync-failed.requestcollector: ""
   name: {{ $key }}
   namespace: {{ default "argocd" $.Values.argocdNamespace }}
 spec:
