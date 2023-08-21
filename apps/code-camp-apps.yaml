@@ -27,9 +27,9 @@ applications:
     customAppConfig:
   code-camp-resources:
     customAppConfig:
-  clojure-game:
-    customAppConfig:
   flux01:
     customAppConfig:
   flux02:
+    customAppConfig:
+  prep-test:
     customAppConfig:
