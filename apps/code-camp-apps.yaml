@@ -31,5 +31,3 @@ applications:
     customAppConfig:
   flux02:
     customAppConfig:
-  prep-test:
-    customAppConfig:
