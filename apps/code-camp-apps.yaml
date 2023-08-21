@@ -21,13 +21,9 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  mp-wf-quarkus:
-    customAppConfig:
-  camel-k-resources:
-    customAppConfig:
-  code-camp-resources:
-    customAppConfig:
-  flux01:
-    customAppConfig:
-  flux02:
-    customAppConfig:
+  mp-wf-quarkus: {}
+  camel-k-resources: {}
+  code-camp-resources: {}
+  flux01: {}
+  flux02: {}
+  prep-test: {}
