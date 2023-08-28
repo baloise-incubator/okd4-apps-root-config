@@ -29,8 +29,3 @@ applications:
     customAppConfig:
       serviceCode: gitops
       anotherOne: true
-  gitops-nginx-demo-int: {}
-  new-app-empty-test:
-    customAppConfig:
-      serviceCode: trigger-webhook
-      fancyStuff: yeah
