@@ -31,6 +31,5 @@ applications:
   kubernetes-oom-event-generator: {}
   reloader: {}
   sealed-secrets: {}
-  devops-stack: {}
   openshift-storage: {}
 
