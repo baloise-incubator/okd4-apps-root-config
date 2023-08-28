@@ -25,7 +25,3 @@ namespaceResourceBlacklist:
 applications:
   baloise-design-system-docs-test: {}
   forward-proxy-test: {}
-  gitops-nginx-demo-test:
-    customAppConfig:
-      serviceCode: gitops
-      anotherOne: true
