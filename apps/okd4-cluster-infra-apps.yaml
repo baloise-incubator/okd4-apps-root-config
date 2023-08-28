@@ -31,14 +31,6 @@ applications:
   kubernetes-oom-event-generator: {}
   reloader: {}
   sealed-secrets: {}
-  harbor: {}
   devops-stack: {}
-  argo-workflows: {}
-  argo-events: {}
   openshift-storage: {}
-  infra-minio-operator: {}
-  nexus: {}
-  artifactory: {}
-#  infra-minio-operator: {}
-#  rook-ceph: {}
 
