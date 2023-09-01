@@ -25,7 +25,7 @@ namespaceResourceBlacklist:
 applications:
   akeyless-vault: {}
   argocd: {}
-  openshift-cert-manager: {}
+  cert-manager: {}
   external-dns: {}
   external-secrets: {}
   kubernetes-oom-event-generator: {}
