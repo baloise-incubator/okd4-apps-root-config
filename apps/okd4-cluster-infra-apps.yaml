@@ -25,7 +25,8 @@ namespaceResourceBlacklist:
 applications:
   akeyless-vault: {}
   argocd: {}
-  argo-workflows: {}
+  argo-workflows:
+    disableAutoSync: true
   cert-manager: {}
   external-dns: {}
   external-secrets: {}
