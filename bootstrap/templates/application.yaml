@@ -22,5 +22,8 @@ spec:
     path: apps
     repoURL: {{ $.Values.repository }}
     targetRevision: HEAD
-
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
 {{ end }}
