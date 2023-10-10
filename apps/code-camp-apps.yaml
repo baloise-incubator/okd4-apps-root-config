@@ -27,3 +27,4 @@ applications:
   flux01: {}
   flux02: {}
   k8s-quark-devops: {}
+  monitoring-stack: {}
