@@ -33,3 +33,4 @@ applications:
   reloader: {}
   sealed-secrets: {}
   openshift-storage: {}
+  falco: {}
