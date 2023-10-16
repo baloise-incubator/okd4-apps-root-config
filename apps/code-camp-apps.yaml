@@ -29,3 +29,4 @@ applications:
   k8s-quark-devops: {}
   monitoring-stack: {}
   gabelstapler-test: {}
+  address-search-test: {}
