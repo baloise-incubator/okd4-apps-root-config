@@ -28,3 +28,4 @@ applications:
   flux02: {}
   k8s-quark-devops: {}
   monitoring-stack: {}
+  gabelstapler-test: {}
