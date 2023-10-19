@@ -19,4 +19,6 @@ applications:
   gitops-test: {}
   gitops-int: {}
   gitops-prod: {}
-  gitops-stages: {}
+  gitops-stages:
+    namespaceAnnotations:
+      kargo.akuity.io/project: "true"
