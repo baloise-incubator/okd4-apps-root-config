@@ -31,3 +31,4 @@ applications:
   gabelstapler-test: {}
   address-search-test: {}
   realtime-collab-test: {}
+  diabetes-app-test: {}
