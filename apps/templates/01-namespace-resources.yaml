@@ -10,7 +10,7 @@ kind: Namespace
 metadata:
   name: {{ $key }}
   annotations:
-    openshift.io/requester: {{ .Release.Name }}
+    openshift.io/requester: {{ $.Release.Name }}
 {{ if $.Values.namespace.annotations }}
 {{ toYaml $.Values.namespace.annotations | indent 4 }}
 {{- end }}
