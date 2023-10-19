@@ -16,9 +16,25 @@ roleBindings:
 
 # List of directories inside config repository
 applications:
-  gitops-test: {}
-  gitops-int: {}
-  gitops-prod: {}
+  gitops-test:
+    customAppConfig:
+      images:
+      - image: docker.io/niiku/gitops-nginx-demo
+        key: app.image.tag
+        value: Tag
+        autoPromote: true
+  gitops-int:
+    customAppConfig:
+      images:
+      - image: docker.io/niiku/gitops-nginx-demo
+        key: app.image.tag
+        value: Tag
+  gitops-prod:
+    customAppConfig:
+      images:
+      - image: docker.io/niiku/gitops-nginx-demo
+        key: app.image.tag
+        value: Tag
   gitops-stages:
     namespaceLabels:
       kargo.akuity.io/project: "true"
