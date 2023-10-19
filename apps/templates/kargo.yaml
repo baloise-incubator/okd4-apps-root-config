@@ -25,7 +25,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: {{ $project }}-kargo
-  annotations:
+  labels:
     kargo.akuity.io/project: "true"
 ---
 apiVersion: v1
