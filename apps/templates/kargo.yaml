@@ -24,15 +24,15 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: {{ $project }}-kargo
+  name: {{ $project }}-stages
   labels:
     kargo.akuity.io/project: "true"
 ---
 apiVersion: v1
 kind: Secret
 metadata:
-  name: {{ $project }}-kargo
-  namespace: {{ $project }}-kargo
+  name: {{ $project }}-stages
+  namespace: {{ $project }}-stages
   labels:
     kargo.akuity.io/secret-type: repository
 stringData:
@@ -42,8 +42,8 @@ stringData:
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
-  name: {{ $project }}-kargo
-  namespace: {{ $project }}-kargo
+  name: {{ $project }}-stages
+  namespace: {{ $project }}-stages
 spec:
   data:
     - remoteRef:
@@ -70,7 +70,7 @@ apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
 metadata:
   name: {{ $stage.name }}
-  namespace: {{ $project }}-kargo
+  namespace: {{ $project }}-stages
 spec:
 {{- if eq $index 0 }}
   subscriptions:
