@@ -18,7 +18,7 @@ jobs:
     steps:
     - name: Run gitopscli Container
       run: |
-        docker run --rm -it baloise/gitopscli:5.8.1 sync-apps \
+        docker run --rm baloise/gitopscli:5.8.1 sync-apps \
           --username ${{ secrets.GIT_USERNAME }} \
           --password ${{ secrets.GIT_TOKEN }} \
           --organisation baloise-incubator \
