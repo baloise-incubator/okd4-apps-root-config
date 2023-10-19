@@ -1,0 +1,101 @@
+{{- $suffixes := list "-dev" "-test" "-int" "-acc" "-prod" -}}
+{{- $appDict := dict -}}
+{{- range $suffix := $suffixes -}}
+  {{- range $app, $value := $.Values.applications -}}
+    {{- if $value.customAppConfig }}{{- if $value.customAppConfig.images }}{{- if gt (len $value.customAppConfig.images) 0 }}
+  # Debug: Checking application: {{ $app }}
+      {{- if hasSuffix $suffix $app }}
+  # Debug: Application {{ $app }} matches suffix {{ $suffix }}
+        {{- $key := trimSuffix $suffix $app -}}
+  # Debug: Key for grouping: {{ $key }}
+        {{- $stage := dict "name" $app "value" $value -}}
+        {{- $stageList := index $appDict $key | default list -}}
+        {{- if eq (len $stageList) 0 }}
+          {{- $stage = merge $stage (dict "watchFreight" true) -}}
+        {{- end -}}
+        {{- $stageList = append $stageList $stage -}}
+        {{- $appDict = mergeOverwrite $appDict (dict $key $stageList) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}{{- end -}}{{- end -}}
+{{- end -}}
+{{- range $project, $stages := $appDict -}}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ $project }}-kargo
+  annotations:
+    kargo.akuity.io/project: "true"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ $project }}-kargo
+  labels:
+    kargo.akuity.io/secret-type: repository
+stringData:
+  type: git
+  url: "{{ $.Values.repository }}"
+---
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: {{ $project }}-kargo
+  namespace: {{ $project }}-kargo
+spec:
+  data:
+    - remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        key: /github/token
+      secretKey: password
+    - remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        key: /github/username
+      secretKey: username
+  refreshInterval: 1h
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: akeyless
+  target:
+    creationPolicy: Merge
+    deletionPolicy: Delete
+---
+{{ $previousStage := "" }}
+{{- range $index, $stage := $stages -}}
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: {{ $stage.name }}
+  namespace: {{ $project }}-kargo
+spec:
+{{- if eq $index 0 }}
+  subscriptions:
+    repos:
+      images:
+      {{- range $image := $stage.value.customAppConfig.images }}
+        - repoURL: {{ $image.image }}
+      {{- end }}
+{{- else }}
+  subscriptions:
+    upstreamStages:
+      - name: {{ $previousStage }}
+{{- end }}
+  promotionMechanisms:
+    gitRepoUpdates:
+      - repoURL: {{ $.Values.repository }}
+        writeBranch: master
+        helm:
+          images:
+           {{- range $image := $stage.value.customAppConfig.images }}
+            - image: {{ $image.image }}
+              valuesFilePath: {{ $stage.name }}/values.yaml
+              key: {{ $image.key }}
+              value: {{ $image.value }}
+          {{- end }}
+---
+{{- $previousStage = $stage.name }}
+{{- end -}}
+{{- end -}}
