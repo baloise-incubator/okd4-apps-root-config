@@ -35,6 +35,3 @@ applications:
       - image: docker.io/niiku/gitops-nginx-demo
         key: app.image.tag
         value: Tag
-  gitops-stages:
-    namespaceLabels:
-      kargo.akuity.io/project: "true"
