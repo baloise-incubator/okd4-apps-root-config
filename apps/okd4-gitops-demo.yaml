@@ -15,4 +15,5 @@ roleBindings:
   name: gitops-demo-user
 
 # List of directories inside config repository
-applications: {}
+applications:
+  gitops-test: {}
