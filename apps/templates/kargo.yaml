@@ -32,6 +32,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: {{ $project }}-kargo
+  namespace: {{ $project }}-kargo
   labels:
     kargo.akuity.io/secret-type: repository
 stringData:
