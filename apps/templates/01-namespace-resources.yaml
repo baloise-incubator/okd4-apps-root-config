@@ -17,9 +17,14 @@ metadata:
 {{ if $value.namespaceAnnotations }}
 {{ toYaml $value.namespaceAnnotations | indent 4 }}
 {{- end }}
-{{ if $.Values.namespace.labels }}
+{{ if or $.Values.namespace.labels $value.namespaceLabels }}
   labels:
+{{- end }}
+{{ if $.Values.namespace.labels }}
 {{ toYaml $.Values.namespace.labels | indent 4 }}
+{{- end }}
+{{ if $value.namespaceLabels }}
+{{ toYaml $value.namespaceLabels | indent 4 }}
 {{- end }}
 {{ if $.Values.enableDefaultLimitRange }}
 ---

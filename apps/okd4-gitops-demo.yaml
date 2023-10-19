@@ -20,5 +20,5 @@ applications:
   gitops-int: {}
   gitops-prod: {}
   gitops-stages:
-    namespaceAnnotations:
+    namespaceLabels:
       kargo.akuity.io/project: "true"
