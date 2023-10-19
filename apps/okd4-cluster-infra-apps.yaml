@@ -34,3 +34,4 @@ applications:
   sealed-secrets: {}
   openshift-storage: {}
   falco: {}
+  kargo: {}
