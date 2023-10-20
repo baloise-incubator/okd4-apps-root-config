@@ -35,3 +35,4 @@ applications:
   openshift-storage: {}
   falco: {}
   kargo: {}
+  devops-stack: {}
