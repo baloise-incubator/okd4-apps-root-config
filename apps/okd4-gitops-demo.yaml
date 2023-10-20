@@ -22,7 +22,7 @@ applications:
       - image: docker.io/niiku/gitops-nginx-demo
         key: app.image.tag
         value: Tag
-        autoPromote: true
+      autoPromote: true
   gitops-int:
     customAppConfig:
       images:
@@ -41,18 +41,18 @@ applications:
       - image: docker.io/niiku/gitops-nginx-demo
         key: app.image.tag
         value: Tag
-        autoPromote: true
+      autoPromote: true
   myapp-int:
     customAppConfig:
       images:
       - image: docker.io/niiku/gitops-nginx-demo
         key: app.image.tag
         value: Tag
-        autoPromote: true
+      autoPromote: true
   myapp-prod:
     customAppConfig:
       images:
       - image: docker.io/niiku/gitops-nginx-demo
         key: app.image.tag
         value: Tag
-        autoPromote: true
+      autoPromote: true
