@@ -78,7 +78,7 @@ spec:
       images:
       {{- range $image := $stage.value.customAppConfig.images }}
         - repoURL: {{ $image.image }}
-          updateStrategy: Latest
+          updateStrategy: SemVer
       {{- end }}
 {{- else }}
   subscriptions:
