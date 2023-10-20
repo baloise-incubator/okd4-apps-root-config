@@ -97,7 +97,16 @@ spec:
               key: {{ $image.key }}
               value: {{ $image.value }}
           {{- end }}
----
 {{- $previousStage = $stage.name }}
+---
+{{- if $stage.value.customAppConfig.autoPromote }}
+apiVersion: kargo.akuity.io/v1alpha1
+kind: PromotionPolicy
+metadata:
+  name: {{ $stage.name }}
+  namespace: {{ $project }}-stages
+stage: {{ $stage.name }}
+enableAutoPromotion: true
+{{- end }}
 {{- end -}}
 {{- end -}}
