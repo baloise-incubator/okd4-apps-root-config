@@ -3,11 +3,8 @@
 {{- range $suffix := $suffixes -}}
   {{- range $app, $value := $.Values.applications -}}
     {{- if $value.customAppConfig }}{{- if $value.customAppConfig.images }}{{- if gt (len $value.customAppConfig.images) 0 }}
-  # Debug: Checking application: {{ $app }}
       {{- if hasSuffix $suffix $app }}
-  # Debug: Application {{ $app }} matches suffix {{ $suffix }}
         {{- $key := trimSuffix $suffix $app -}}
-  # Debug: Key for grouping: {{ $key }}
         {{- $stage := dict "name" $app "value" $value -}}
         {{- $stageList := index $appDict $key | default list -}}
         {{- if eq (len $stageList) 0 }}
@@ -107,6 +104,7 @@ metadata:
   namespace: {{ $project }}-stages
 stage: {{ $stage.name }}
 enableAutoPromotion: true
+---
 {{- end }}
 {{- end -}}
 {{- end -}}
