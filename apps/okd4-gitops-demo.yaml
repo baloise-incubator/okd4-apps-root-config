@@ -35,4 +35,24 @@ applications:
       - image: docker.io/niiku/gitops-nginx-demo
         key: app.image.tag
         value: Tag
-  whatever-test: {}
+  myapp-test:
+    customAppConfig:
+      images:
+      - image: docker.io/niiku/gitops-nginx-demo
+        key: app.image.tag
+        value: Tag
+        autoPromote: true
+  myapp-prod:
+    customAppConfig:
+      images:
+      - image: docker.io/niiku/gitops-nginx-demo
+        key: app.image.tag
+        value: Tag
+        autoPromote: true
+  myapp-int:
+    customAppConfig:
+      images:
+      - image: docker.io/niiku/gitops-nginx-demo
+        key: app.image.tag
+        value: Tag
+        autoPromote: true
