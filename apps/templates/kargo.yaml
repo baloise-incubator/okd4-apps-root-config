@@ -83,6 +83,9 @@ spec:
       - name: {{ $previousStage }}
 {{- end }}
   promotionMechanisms:
+    argoCDAppUpdates:
+      - appName: {{ $stage.name }}
+        appNamespace: argocd
     gitRepoUpdates:
       - repoURL: {{ $.Values.repository }}
         writeBranch: master
