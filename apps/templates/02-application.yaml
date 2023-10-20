@@ -24,7 +24,7 @@ metadata:
   {{- range $suffix := $suffixes }}
     {{- if hasSuffix $suffix $key }}
       {{- $proj := trimSuffix $suffix $key }}
-    kargo.akuity.io/authorized-stage: {{ $proj }}:{{ $key }}
+    kargo.akuity.io/authorized-stage: {{ $proj }}-stages:{{ $key }}
     {{- end }}
   {{- end }}
 {{- end }}{{- end }}{{- end }}
