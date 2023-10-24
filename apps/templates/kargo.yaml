@@ -71,12 +71,7 @@ metadata:
 spec:
 {{- if eq $index 0 }}
   subscriptions:
-    repos:
-      images:
-      {{- range $image := $stage.value.customAppConfig.images }}
-        - repoURL: {{ $image.image }}
-          updateStrategy: SemVer
-      {{- end }}
+    warehouse: {{ $project }}-images
 {{- else }}
   subscriptions:
     upstreamStages:
@@ -108,6 +103,18 @@ metadata:
 stage: {{ $stage.name }}
 enableAutoPromotion: true
 ---
+{{- end }}
+{{- if eq $index 0 }}
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
+  name: {{ $project }}-images
+spec:
+  subscriptions:
+{{- range $image := $stage.value.customAppConfig.images }}
+    - image:
+        repoURL: {{ $image.image }}
+{{- end }}
 {{- end }}
 {{- end -}}
 {{- end -}}
