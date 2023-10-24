@@ -116,5 +116,6 @@ spec:
         repoURL: {{ $image.image }}
 {{- end }}
 {{- end }}
-{{- end -}}
+---
+{{ end -}}
 {{- end -}}
