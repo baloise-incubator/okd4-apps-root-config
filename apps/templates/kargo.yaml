@@ -109,6 +109,7 @@ apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
   name: {{ $project }}-images
+  namespace: {{ $project }}-stages
 spec:
   subscriptions:
 {{- range $image := $stage.value.customAppConfig.images }}
