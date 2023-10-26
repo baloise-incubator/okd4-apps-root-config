@@ -41,7 +41,6 @@ applications:
       - image: docker.io/niiku/gitops-nginx-demo
         key: app.image.tag
         value: Tag
-      autoPromote: true
   myapp-int:
     customAppConfig:
       images:
