@@ -36,3 +36,4 @@ applications:
   falco: {}
   kargo: {}
   devops-stack: {}
+  gh-action-kargo: {}
