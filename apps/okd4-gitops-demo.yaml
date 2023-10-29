@@ -16,40 +16,43 @@ roleBindings:
 
 # List of directories inside config repository
 applications:
-  gitops-test:
+  kargo-demo-test:
     customAppConfig:
-      images:
-      - image: docker.io/niiku/gitops-nginx-demo
-        key: app.image.tag
-        value: Tag
-      autoPromote: true
-  gitops-int:
+      kargo:
+        name: kargo-demo
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: app.image.tag
+  kargo-demo-acc:
     customAppConfig:
-      images:
-      - image: docker.io/niiku/gitops-nginx-demo
-        key: app.image.tag
-        value: Tag
-  gitops-prod:
+      kargo:
+        name: kargo-demo
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: app.image.tag
+  kargo-demo-dev:
     customAppConfig:
-      images:
-      - image: docker.io/niiku/gitops-nginx-demo
-        key: app.image.tag
-        value: Tag
-  myapp-test:
+      kargo:
+        name: kargo-demo
+        autoPromote: true
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: app.image.tag
+  kargo-demo-chnw2-prod:
     customAppConfig:
-      images:
-      - image: docker.io/niiku/gitops-nginx-demo
-        key: app.image.tag
-        value: Tag
-  myapp-int:
+      kargo:
+        name: kargo-demo
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: app.image.tag
+  kargo-demo-chnw1-prod:
     customAppConfig:
-      images:
-      - image: docker.io/niiku/gitops-nginx-demo
-        key: app.image.tag
-        value: Tag
-  myapp-prod:
-    customAppConfig:
-      images:
-      - image: docker.io/niiku/gitops-nginx-demo
-        key: app.image.tag
-        value: Tag
+      kargo:
+        name: kargo-demo
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: app.image.tag
