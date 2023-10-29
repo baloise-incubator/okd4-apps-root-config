@@ -1,21 +1,25 @@
-{{- $suffixes := list "-dev" "-test" "-int" "-acc" "-prod" -}}
+{{- $stageNames := list "dev" "test" "int" "acc" "prod" -}}
+{{- $stageColor := list "lime" "green" "yellow" "orange" "red" -}}
 {{- $appDict := dict -}}
-{{- range $suffix := $suffixes -}}
+{{- range $stageNameIndex, $stageName := $stageNames -}}
+  {{- $stageNameSuffix := printf "-%s" $stageName -}}
+  {{- $stageColor := index $stageColor $stageNameIndex -}}
   {{- range $app, $value := $.Values.applications -}}
-    {{- if $value.customAppConfig }}{{- if $value.customAppConfig.images }}{{- if gt (len $value.customAppConfig.images) 0 }}
-      {{- if hasSuffix $suffix $app }}
-        {{- $key := trimSuffix $suffix $app -}}
-        {{- $stage := dict "name" $app "value" $value -}}
-        {{- $stageList := index $appDict $key | default list -}}
-        {{- if eq (len $stageList) 0 }}
-          {{- $stage = merge $stage (dict "watchFreight" true) -}}
+    {{- if $value.customAppConfig }}{{- if $value.customAppConfig.kargo }}{{- if $value.customAppConfig.kargo.images }}{{- if gt (len $value.customAppConfig.kargo.images) 0 }}
+      {{- $appName := $value.customAppConfig.kargo.name -}}
+      {{- if hasSuffix $stageNameSuffix $app }}
+        {{- $applicationStages := index $appDict $appName | default list -}}
+        {{- $stage := dict "name" $app "value" $value "stageName" $stageName "stageColor" $stageColor -}}
+        {{- if eq (len $applicationStages) 0 }}
+          {{- $stage = merge $stage (dict "watchWarehouse" true) -}}
         {{- end -}}
-        {{- $stageList = append $stageList $stage -}}
-        {{- $appDict = mergeOverwrite $appDict (dict $key $stageList) -}}
+        {{- $applicationStages = append $applicationStages $stage -}}
+        {{- $appDict = mergeOverwrite $appDict (dict $appName $applicationStages) -}}
       {{- end -}}
     {{- end -}}
-  {{- end -}}{{- end -}}{{- end -}}
+  {{- end -}}{{- end -}}{{- end -}}{{- end -}}
 {{- end -}}
+
 {{- range $project, $stages := $appDict -}}
 ---
 apiVersion: v1
@@ -61,21 +65,32 @@ spec:
     creationPolicy: Merge
     deletionPolicy: Delete
 ---
-{{ $previousStage := "" }}
+{{ $previousStage := dict }}
 {{- range $index, $stage := $stages -}}
+  {{- if ne (len $previousStage) 0 -}}
+    {{- $potentialPrevious := index $stages (sub $index 1) -}}
+    {{- if ne $potentialPrevious.stageName $stage.stageName -}}
+      {{- $previousStage = $potentialPrevious -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $previousStage = $stage -}}
+  {{- end -}}
+
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Stage
 metadata:
   name: {{ $stage.name }}
   namespace: {{ $project }}-stages
+  annotations:
+    kargo.akuity.io/color: {{ $stage.stageColor }}
 spec:
 {{- if eq $index 0 }}
   subscriptions:
-    warehouse: {{ $project }}-images
+    warehouse: {{ $project }}
 {{- else }}
   subscriptions:
     upstreamStages:
-      - name: {{ $previousStage }}
+      - name: {{ $previousStage.name }}
 {{- end }}
   promotionMechanisms:
     argoCDAppUpdates:
@@ -86,15 +101,14 @@ spec:
         writeBranch: master
         helm:
           images:
-           {{- range $image := $stage.value.customAppConfig.images }}
+           {{- range $image := $stage.value.customAppConfig.kargo.images }}
             - image: {{ $image.image }}
               valuesFilePath: {{ $stage.name }}/values.yaml
               key: {{ $image.key }}
               value: {{ $image.value }}
           {{- end }}
-{{- $previousStage = $stage.name }}
 ---
-{{- if $stage.value.customAppConfig.autoPromote }}
+{{- if $stage.value.customAppConfig.kargo.autoPromote }}
 apiVersion: kargo.akuity.io/v1alpha1
 kind: PromotionPolicy
 metadata:
@@ -108,11 +122,11 @@ enableAutoPromotion: true
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
-  name: {{ $project }}-images
+  name: {{ $project }}
   namespace: {{ $project }}-stages
 spec:
   subscriptions:
-{{- range $image := $stage.value.customAppConfig.images }}
+{{- range $image := $stage.value.customAppConfig.kargo.images }}
     - image:
         repoURL: {{ $image.image }}
 {{- end }}
