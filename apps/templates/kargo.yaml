@@ -105,7 +105,7 @@ spec:
             - image: {{ $image.image }}
               valuesFilePath: {{ $stage.name }}/values.yaml
               key: {{ $image.key }}
-              value: {{ $image.value }}
+              value: Tag
           {{- end }}
 ---
 {{- if $stage.value.customAppConfig.kargo.autoPromote }}
