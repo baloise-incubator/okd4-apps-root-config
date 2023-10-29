@@ -9,7 +9,8 @@
       {{- $appName := $value.customAppConfig.kargo.name -}}
       {{- if hasSuffix $stageNameSuffix $app }}
         {{- $applicationStages := index $appDict $appName | default list -}}
-        {{- $stage := dict "name" $app "value" $value "stageName" $stageName "stageColor" $stageColor -}}
+        {{- $name := trimPrefix (printf "%-" $appName) $app }}
+        {{- $stage := dict "name" $name "value" $value "stageName" $stageName "stageColor" $stageColor -}}
         {{- if eq (len $applicationStages) 0 }}
           {{- $stage = merge $stage (dict "watchWarehouse" true) -}}
         {{- end -}}
