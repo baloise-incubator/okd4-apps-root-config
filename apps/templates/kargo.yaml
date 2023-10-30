@@ -131,6 +131,8 @@ spec:
     - image:
         repoURL: {{ $image.image }}
 {{- end }}
+    - git:
+        repoURL: {{ $.Values.repository }}
 {{- end }}
 ---
 {{ end -}}
