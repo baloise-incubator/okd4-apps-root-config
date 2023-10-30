@@ -6,16 +6,16 @@
   {{- $stageColor := index $stageColor $stageNameIndex -}}
   {{- range $app, $value := $.Values.applications -}}
     {{- if $value.customAppConfig }}{{- if $value.customAppConfig.kargo }}{{- if $value.customAppConfig.kargo.images }}{{- if gt (len $value.customAppConfig.kargo.images) 0 }}
-      {{- $appName := $value.customAppConfig.kargo.name -}}
+      {{- $kargoName := $value.customAppConfig.kargo.name -}}
       {{- if hasSuffix $stageNameSuffix $app }}
-        {{- $applicationStages := index $appDict $appName | default list -}}
-        {{- $name := trimPrefix (printf "%s-" $appName) $app }}
-        {{- $stage := dict "name" $name "value" $value "stageName" $stageName "stageColor" $stageColor -}}
+        {{- $applicationStages := index $appDict $kargoName | default list -}}
+        {{- $name := trimPrefix (printf "%s-" $kargoName) $app }}
+        {{- $stage := dict "name" $name "appName" $app "kargoName" $kargoName "value" $value "stageName" $stageName "stageColor" $stageColor -}}
         {{- if eq (len $applicationStages) 0 }}
           {{- $stage = merge $stage (dict "watchWarehouse" true) -}}
         {{- end -}}
         {{- $applicationStages = append $applicationStages $stage -}}
-        {{- $appDict = mergeOverwrite $appDict (dict $appName $applicationStages) -}}
+        {{- $appDict = mergeOverwrite $appDict (dict $kargoName $applicationStages) -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}{{- end -}}{{- end -}}{{- end -}}
@@ -95,7 +95,7 @@ spec:
 {{- end }}
   promotionMechanisms:
     argoCDAppUpdates:
-      - appName: {{ $stage.name }}
+      - appName: {{ $stage.appName }}
         appNamespace: argocd
     gitRepoUpdates:
       - repoURL: {{ $.Values.repository }}
