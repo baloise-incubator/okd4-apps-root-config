@@ -15,12 +15,8 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "10"
-{{- if $value.customAppConfig }}{{ if $value.customAppConfig.images }}{{ if gt (len $value.customAppConfig.images) 0 }}
-  {{- range $suffix := $suffixes }}
-    {{- if hasSuffix $suffix $key }}
-      {{- $proj := trimSuffix $suffix $key }}
-    kargo.akuity.io/authorized-stage: {{ $proj }}-stages:{{ $key }}
-    {{- end }}
+{{- if $value.customAppConfig }}{{ if $value.customAppConfig.kargo }}{{ if $value.customAppConfig.kargo.images }}{{ if gt (len $value.customAppConfig.kargo.images) 0 }}
+    kargo.akuity.io/authorized-stage: {{ $value.customAppConfig.kargo.name }}-stages:{{ trimPrefix (printf "%s-" $$value.customAppConfig.kargo.name) $key }}
   {{- end }}
 {{- end }}{{- end }}{{- end }}
   name: {{ $key }}

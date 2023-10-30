@@ -1,0 +1,794 @@
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kargo-demo-acc
+  annotations:
+    openshift.io/requester: okd4-gitops-demo-apps
+
+
+
+  labels:
+
+    owner: gitops-demo
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kargo-demo-chnw1-prod
+  annotations:
+    openshift.io/requester: okd4-gitops-demo-apps
+
+
+
+  labels:
+
+    owner: gitops-demo
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kargo-demo-chnw2-prod
+  annotations:
+    openshift.io/requester: okd4-gitops-demo-apps
+
+
+
+  labels:
+
+    owner: gitops-demo
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kargo-demo-dev
+  annotations:
+    openshift.io/requester: okd4-gitops-demo-apps
+
+
+
+  labels:
+
+    owner: gitops-demo
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kargo-demo-test
+  annotations:
+    openshift.io/requester: okd4-gitops-demo-apps
+
+
+
+  labels:
+
+    owner: gitops-demo
+---
+# Source: apps/templates/kargo.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kargo-demo-stages
+  labels:
+    kargo.akuity.io/project: "true"
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-from-openshift-ingress
+  namespace: kargo-demo-acc
+spec:
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              network.openshift.io/policy-group: ingress
+  podSelector: {}
+  policyTypes:
+    - Ingress
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-same-namespace
+  namespace: kargo-demo-acc
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - podSelector: {}
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: deny-by-default
+  namespace: kargo-demo-acc
+spec:
+  podSelector: {}
+  ingress: []
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-from-openshift-ingress
+  namespace: kargo-demo-chnw1-prod
+spec:
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              network.openshift.io/policy-group: ingress
+  podSelector: {}
+  policyTypes:
+    - Ingress
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-same-namespace
+  namespace: kargo-demo-chnw1-prod
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - podSelector: {}
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: deny-by-default
+  namespace: kargo-demo-chnw1-prod
+spec:
+  podSelector: {}
+  ingress: []
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-from-openshift-ingress
+  namespace: kargo-demo-chnw2-prod
+spec:
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              network.openshift.io/policy-group: ingress
+  podSelector: {}
+  policyTypes:
+    - Ingress
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-same-namespace
+  namespace: kargo-demo-chnw2-prod
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - podSelector: {}
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: deny-by-default
+  namespace: kargo-demo-chnw2-prod
+spec:
+  podSelector: {}
+  ingress: []
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-from-openshift-ingress
+  namespace: kargo-demo-dev
+spec:
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              network.openshift.io/policy-group: ingress
+  podSelector: {}
+  policyTypes:
+    - Ingress
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-same-namespace
+  namespace: kargo-demo-dev
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - podSelector: {}
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: deny-by-default
+  namespace: kargo-demo-dev
+spec:
+  podSelector: {}
+  ingress: []
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-from-openshift-ingress
+  namespace: kargo-demo-test
+spec:
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              network.openshift.io/policy-group: ingress
+  podSelector: {}
+  policyTypes:
+    - Ingress
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: allow-same-namespace
+  namespace: kargo-demo-test
+spec:
+  podSelector: {}
+  ingress:
+    - from:
+        - podSelector: {}
+---
+# Source: apps/templates/01-namespace-resources.yaml
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: deny-by-default
+  namespace: kargo-demo-test
+spec:
+  podSelector: {}
+  ingress: []
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: core-resource-limits
+  namespace: "kargo-demo-acc"
+spec:
+  limits:
+    - type: Pod
+      max:
+        cpu: "4"
+        memory: 8Gi
+      min:
+        cpu: 1m
+        memory: 1
+    - type: Container
+      default:
+        cpu: 2
+        memory: 1Gi
+      defaultRequest:
+        cpu: 25m
+        memory: 512Mi
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: core-resource-limits
+  namespace: "kargo-demo-chnw1-prod"
+spec:
+  limits:
+    - type: Pod
+      max:
+        cpu: "4"
+        memory: 8Gi
+      min:
+        cpu: 1m
+        memory: 1
+    - type: Container
+      default:
+        cpu: 2
+        memory: 1Gi
+      defaultRequest:
+        cpu: 25m
+        memory: 512Mi
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: core-resource-limits
+  namespace: "kargo-demo-chnw2-prod"
+spec:
+  limits:
+    - type: Pod
+      max:
+        cpu: "4"
+        memory: 8Gi
+      min:
+        cpu: 1m
+        memory: 1
+    - type: Container
+      default:
+        cpu: 2
+        memory: 1Gi
+      defaultRequest:
+        cpu: 25m
+        memory: 512Mi
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: core-resource-limits
+  namespace: "kargo-demo-dev"
+spec:
+  limits:
+    - type: Pod
+      max:
+        cpu: "4"
+        memory: 8Gi
+      min:
+        cpu: 1m
+        memory: 1
+    - type: Container
+      default:
+        cpu: 2
+        memory: 1Gi
+      defaultRequest:
+        cpu: 25m
+        memory: 512Mi
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: core-resource-limits
+  namespace: "kargo-demo-test"
+spec:
+  limits:
+    - type: Pod
+      max:
+        cpu: "4"
+        memory: 8Gi
+      min:
+        cpu: 1m
+        memory: 1
+    - type: Container
+      default:
+        cpu: 2
+        memory: 1Gi
+      defaultRequest:
+        cpu: 25m
+        memory: 512Mi
+---
+# Source: apps/templates/kargo.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kargo-demo-stages
+  namespace: kargo-demo-stages
+  labels:
+    kargo.akuity.io/secret-type: repository
+stringData:
+  type: git
+  url: "https://github.com/baloise-incubator/okd4-gitops-demo.git"
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: gitops-demo-user-admin
+  namespace: "kargo-demo-acc"
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: admin
+subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: User
+    name: gitops-demo-user
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: gitops-demo-user-admin
+  namespace: "kargo-demo-chnw1-prod"
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: admin
+subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: User
+    name: gitops-demo-user
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: gitops-demo-user-admin
+  namespace: "kargo-demo-chnw2-prod"
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: admin
+subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: User
+    name: gitops-demo-user
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: gitops-demo-user-admin
+  namespace: "kargo-demo-dev"
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: admin
+subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: User
+    name: gitops-demo-user
+---
+# Source: apps/templates/01-namespace-resources.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: gitops-demo-user-admin
+  namespace: "kargo-demo-test"
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: admin
+subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: User
+    name: gitops-demo-user
+---
+# Source: apps/templates/kargo.yaml
+---
+---
+# Source: apps/templates/00-appprojects.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: okd4-gitops-demo-apps
+  namespace: argocd
+spec:
+  sourceRepos:
+    - 'https://github.com/baloise-incubator/okd4-gitops-demo.git'
+  destinations:
+    - namespace: kargo-demo-acc
+      server: https://kubernetes.default.svc
+    - namespace: kargo-demo-chnw1-prod
+      server: https://kubernetes.default.svc
+    - namespace: kargo-demo-chnw2-prod
+      server: https://kubernetes.default.svc
+    - namespace: kargo-demo-dev
+      server: https://kubernetes.default.svc
+    - namespace: kargo-demo-test
+      server: https://kubernetes.default.svc
+---
+# Source: apps/templates/02-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+  name: kargo-demo-acc
+  namespace: argocd
+spec:
+  destination:
+    namespace: kargo-demo-acc
+    server: https://kubernetes.default.svc
+  project: okd4-gitops-demo-apps
+  source:
+    path: kargo-demo-acc
+    repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+
+  syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+    automated:
+      prune: true
+      selfHeal: true
+---
+# Source: apps/templates/02-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+  name: kargo-demo-chnw1-prod
+  namespace: argocd
+spec:
+  destination:
+    namespace: kargo-demo-chnw1-prod
+    server: https://kubernetes.default.svc
+  project: okd4-gitops-demo-apps
+  source:
+    path: kargo-demo-chnw1-prod
+    repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+
+  syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+    automated:
+      prune: true
+      selfHeal: true
+---
+# Source: apps/templates/02-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+  name: kargo-demo-chnw2-prod
+  namespace: argocd
+spec:
+  destination:
+    namespace: kargo-demo-chnw2-prod
+    server: https://kubernetes.default.svc
+  project: okd4-gitops-demo-apps
+  source:
+    path: kargo-demo-chnw2-prod
+    repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+
+  syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+    automated:
+      prune: true
+      selfHeal: true
+---
+# Source: apps/templates/02-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+  name: kargo-demo-dev
+  namespace: argocd
+spec:
+  destination:
+    namespace: kargo-demo-dev
+    server: https://kubernetes.default.svc
+  project: okd4-gitops-demo-apps
+  source:
+    path: kargo-demo-dev
+    repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+
+  syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+    automated:
+      prune: true
+      selfHeal: true
+---
+# Source: apps/templates/02-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+  name: kargo-demo-test
+  namespace: argocd
+spec:
+  destination:
+    namespace: kargo-demo-test
+    server: https://kubernetes.default.svc
+  project: okd4-gitops-demo-apps
+  source:
+    path: kargo-demo-test
+    repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+
+  syncPolicy:
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
+    automated:
+      prune: true
+      selfHeal: true
+---
+# Source: apps/templates/kargo.yaml
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: kargo-demo-stages
+  namespace: kargo-demo-stages
+spec:
+  data:
+    - remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        key: /github/token
+      secretKey: password
+    - remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        key: /github/username
+      secretKey: username
+  refreshInterval: 1h
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: akeyless
+  target:
+    creationPolicy: Merge
+    deletionPolicy: Delete
+---
+# Source: apps/templates/kargo.yaml
+apiVersion: kargo.akuity.io/v1alpha1
+kind: PromotionPolicy
+metadata:
+  name: dev
+  namespace: kargo-demo-stages
+stage: dev
+enableAutoPromotion: true
+---
+# Source: apps/templates/kargo.yaml
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: dev
+  namespace: kargo-demo-stages
+  annotations:
+    kargo.akuity.io/color: lime
+spec:
+  subscriptions:
+    warehouse: kargo-demo
+  promotionMechanisms:
+    argoCDAppUpdates:
+      - appName: kargo-demo-dev
+        appNamespace: argocd
+    gitRepoUpdates:
+      - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+        writeBranch: master
+        helm:
+          images:
+            - image: docker.io/niiku/gitops-nginx-demo
+              valuesFilePath: dev/values.yaml
+              key: app.image.tag
+              value: Tag
+---
+# Source: apps/templates/kargo.yaml
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: test
+  namespace: kargo-demo-stages
+  annotations:
+    kargo.akuity.io/color: green
+spec:
+  subscriptions:
+    upstreamStages:
+      - name: dev
+  promotionMechanisms:
+    argoCDAppUpdates:
+      - appName: kargo-demo-test
+        appNamespace: argocd
+    gitRepoUpdates:
+      - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+        writeBranch: master
+        helm:
+          images:
+            - image: docker.io/niiku/gitops-nginx-demo
+              valuesFilePath: test/values.yaml
+              key: app.image.tag
+              value: Tag
+---
+# Source: apps/templates/kargo.yaml
+---
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: acc
+  namespace: kargo-demo-stages
+  annotations:
+    kargo.akuity.io/color: orange
+spec:
+  subscriptions:
+    upstreamStages:
+      - name: test
+  promotionMechanisms:
+    argoCDAppUpdates:
+      - appName: kargo-demo-acc
+        appNamespace: argocd
+    gitRepoUpdates:
+      - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+        writeBranch: master
+        helm:
+          images:
+            - image: docker.io/niiku/gitops-nginx-demo
+              valuesFilePath: acc/values.yaml
+              key: app.image.tag
+              value: Tag
+---
+# Source: apps/templates/kargo.yaml
+---
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: chnw1-prod
+  namespace: kargo-demo-stages
+  annotations:
+    kargo.akuity.io/color: red
+spec:
+  subscriptions:
+    upstreamStages:
+      - name: acc
+  promotionMechanisms:
+    argoCDAppUpdates:
+      - appName: kargo-demo-chnw1-prod
+        appNamespace: argocd
+    gitRepoUpdates:
+      - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+        writeBranch: master
+        helm:
+          images:
+            - image: docker.io/niiku/gitops-nginx-demo
+              valuesFilePath: chnw1-prod/values.yaml
+              key: app.image.tag
+              value: Tag
+---
+# Source: apps/templates/kargo.yaml
+---
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Stage
+metadata:
+  name: chnw2-prod
+  namespace: kargo-demo-stages
+  annotations:
+    kargo.akuity.io/color: red
+spec:
+  subscriptions:
+    upstreamStages:
+      - name: acc
+  promotionMechanisms:
+    argoCDAppUpdates:
+      - appName: kargo-demo-chnw2-prod
+        appNamespace: argocd
+    gitRepoUpdates:
+      - repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
+        writeBranch: master
+        helm:
+          images:
+            - image: docker.io/niiku/gitops-nginx-demo
+              valuesFilePath: chnw2-prod/values.yaml
+              key: app.image.tag
+              value: Tag
+---
+# Source: apps/templates/kargo.yaml
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
+  name: kargo-demo
+  namespace: kargo-demo-stages
+spec:
+  subscriptions:
+    - image:
+        repoURL: docker.io/niiku/gitops-nginx-demo
+    - git:
+        repoURL: https://github.com/baloise-incubator/okd4-gitops-demo.git
