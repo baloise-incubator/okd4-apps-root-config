@@ -23,7 +23,7 @@ applications:
         autoPromote: false
         images:
         - image: docker.io/niiku/gitops-nginx-demo
-          key: app.image.tag
+          key: kargo-demo.image.tag
   kargo-demo-acc:
     customAppConfig:
       kargo:
@@ -31,7 +31,7 @@ applications:
         autoPromote: false
         images:
         - image: docker.io/niiku/gitops-nginx-demo
-          key: app.image.tag
+          key: kargo-demo.image.tag
   kargo-demo-dev:
     customAppConfig:
       kargo:
@@ -39,7 +39,7 @@ applications:
         autoPromote: true
         images:
         - image: docker.io/niiku/gitops-nginx-demo
-          key: app.image.tag
+          key: kargo-demo.image.tag
   kargo-demo-chnw2-prod:
     customAppConfig:
       kargo:
@@ -47,7 +47,7 @@ applications:
         autoPromote: false
         images:
         - image: docker.io/niiku/gitops-nginx-demo
-          key: app.image.tag
+          key: kargo-demo.image.tag
   kargo-demo-chnw1-prod:
     customAppConfig:
       kargo:
@@ -55,4 +55,4 @@ applications:
         autoPromote: false
         images:
         - image: docker.io/niiku/gitops-nginx-demo
-          key: app.image.tag
+          key: kargo-demo.image.tag
