@@ -63,7 +63,7 @@ applications:
         autoPromote: true
         images:
         - image: docker.io/niiku/gitops-nginx-demo
-          key: kargo-joachim.image.tag
+          key: kargo-joachim.kargo-joachim-chart.image.tag
   kargo-joachim-acc:
     customAppConfig:
       kargo:
@@ -72,3 +72,11 @@ applications:
         images:
         - image: docker.io/niiku/gitops-nginx-demo
           key: kargo-joachim.image.tag
+  kargo-joachim-test:
+    customAppConfig:
+      kargo:
+        name: kargo-joachim
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: kargo-joachim.kargo-joachim-chart.image.tag
