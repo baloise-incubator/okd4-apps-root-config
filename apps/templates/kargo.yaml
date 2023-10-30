@@ -130,9 +130,9 @@ spec:
 {{- range $image := $stage.value.customAppConfig.kargo.images }}
     - image:
         repoURL: {{ $image.image }}
-{{- if $image.repository }}
+  {{- if $image.repository }}
         gitRepoURL: {{ $image.repository }}
-{{- end }}
+  {{- end }}
 {{- end }}
     - git:
         repoURL: {{ $.Values.repository }}
