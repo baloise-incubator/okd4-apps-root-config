@@ -104,7 +104,7 @@ spec:
           images:
            {{- range $image := $stage.value.customAppConfig.kargo.images }}
             - image: {{ $image.image }}
-              valuesFilePath: {{ $stage.name }}/values.yaml
+              valuesFilePath: {{ $stage.appName }}/values.yaml
               key: {{ $image.key }}
               value: Tag
           {{- end }}
