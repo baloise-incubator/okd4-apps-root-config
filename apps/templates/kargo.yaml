@@ -134,9 +134,16 @@ spec:
         gitRepoURL: {{ $image.repository }}
   {{- end }}
 {{- end }}
+  {{- if $stage.value.customAppConfig.kargo.gitEnabled }}
     - git:
         repoURL: {{ $.Values.repository }}
         branch: master
+  {{- end }}
+  {{- if $chart := $stage.value.customAppConfig.kargo.chart }}
+    - chart:
+        registryURL: {{ $chart.registry }}
+        name: {{ $chart.name }}
+  {{- end }}
 {{- end }}
 ---
 {{ end -}}
