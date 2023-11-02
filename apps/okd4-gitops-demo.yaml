@@ -64,6 +64,11 @@ applications:
         images:
         - image: docker.io/niiku/gitops-nginx-demo
           key: kargo-joachim.kargo-joachim-chart.image.tag
+          repository: https://github.com/baloise-incubator/gitops-nginx-demo.git
+        chart:
+          registryURL: https://baloise-incubator.github.io/gitops-nginx-demo
+          name: kargo-joachim-chart
+
   kargo-joachim-acc:
     customAppConfig:
       kargo:
