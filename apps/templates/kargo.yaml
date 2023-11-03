@@ -141,7 +141,7 @@ spec:
   {{- end }}
   {{- if $chart := $stage.value.customAppConfig.kargo.chart }}
     - chart:
-        registryURL: {{ $chart.registry }}
+        registryURL: {{ $chart.registryURL }}
         name: {{ $chart.name }}
   {{- end }}
 {{- end }}
