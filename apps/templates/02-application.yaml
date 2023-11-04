@@ -15,10 +15,10 @@ kind: Application
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "10"
-{{- if $value.customAppConfig }}{{ if $value.customAppConfig.kargo }}{{ if $value.customAppConfig.kargo.images }}{{ if gt (len $value.customAppConfig.kargo.images) 0 }}
+{{- if $value.customAppConfig }}{{ if $value.customAppConfig.kargo }}
     kargo.akuity.io/authorized-stage: {{ $value.customAppConfig.kargo.name }}-stages:{{ trimPrefix (printf "%s-" $value.customAppConfig.kargo.name) $key }}
   {{- end }}
-{{- end }}{{- end }}{{- end }}
+{{- end }}
   name: {{ $key }}
   namespace: {{ default "argocd" $.Values.argocdNamespace }}
 spec:
