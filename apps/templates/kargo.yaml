@@ -118,6 +118,7 @@ spec:
            {{- range $chart := $stage.value.customAppConfig.kargo.charts }}
             - chartPath: {{ $stage.appName }}
               name: {{ $chart.name }}
+              registryURL: {{ $chart.registryURL }}
           {{- end }}
   {{- end }}
   {{- end }}
