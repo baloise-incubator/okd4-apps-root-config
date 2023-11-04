@@ -6,6 +6,8 @@ metadata:
 spec:
   sourceRepos:
     - '{{ .Values.repository }}'
+    - 'https://baloise-incubator.github.io/gitops-nginx-demo'
+    - 'https://baloise-incubator.github.io/generic-chart'
 {{- if eq (len .Values.applications ) 0 }}
   destinations: []
 {{- else }}
