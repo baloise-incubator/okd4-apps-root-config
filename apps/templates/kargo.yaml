@@ -5,7 +5,7 @@
   {{- $stageNameSuffix := printf "-%s" $stageName -}}
   {{- $stageColor := index $stageColor $stageNameIndex -}}
   {{- range $app, $value := $.Values.applications -}}
-    {{- if $value.customAppConfig }}{{- if $value.customAppConfig.kargo }}{{- if $value.customAppConfig.kargo.images }}{{- if gt (len $value.customAppConfig.kargo.images) 0 }}
+    {{- if $value.customAppConfig }}{{- if $value.customAppConfig.kargo }}
       {{- $kargoName := $value.customAppConfig.kargo.name -}}
       {{- if hasSuffix $stageNameSuffix $app }}
         {{- $applicationStages := index $appDict $kargoName | default list -}}
@@ -18,7 +18,7 @@
         {{- $appDict = mergeOverwrite $appDict (dict $kargoName $applicationStages) -}}
       {{- end -}}
     {{- end -}}
-  {{- end -}}{{- end -}}{{- end -}}{{- end -}}
+  {{- end -}}{{- end -}}
 {{- end -}}
 
 {{- range $project, $stages := $appDict -}}
