@@ -90,6 +90,6 @@ applications:
       kargo:
         name: kargo-example
         autoPromote: false
-        chart:
-          registryURL: https://baloise-incubator.github.io/gitops-nginx-demo
+        charts:
+        - registryURL: https://baloise-incubator.github.io/gitops-nginx-demo
           name: gitops-nginx-demo
