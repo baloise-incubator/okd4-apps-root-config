@@ -98,6 +98,7 @@ spec:
       - appName: {{ $stage.appName }}
         appNamespace: argocd
     gitRepoUpdates:
+  {{- if $stage.value.customAppConfig.kargo.images }}{{- if gt (len $stage.value.customAppConfig.kargo.images) 0 }}
       - repoURL: {{ $.Values.repository }}
         writeBranch: master
         helm:
@@ -108,6 +109,18 @@ spec:
               key: {{ $image.key }}
               value: Tag
           {{- end }}
+  {{- end }}{{- end }}
+  {{- if $stage.value.customAppConfig.kargo.charts }}{{- if gt (len $stage.value.customAppConfig.kargo.charts) 0 }}
+      - repoURL: {{ $.Values.repository }}
+        writeBranch: master
+        helm:
+          charts:
+           {{- range $chart := $stage.value.customAppConfig.kargo.charts }}
+            - chartPath: {{ $stage.appName }}
+              name: {{ $chart.name }}
+          {{- end }}
+  {{- end }}
+  {{- end }}
 ---
 {{- if $stage.value.customAppConfig.kargo.autoPromote }}
 apiVersion: kargo.akuity.io/v1alpha1
