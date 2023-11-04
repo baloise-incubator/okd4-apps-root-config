@@ -153,10 +153,12 @@ spec:
         repoURL: {{ $.Values.repository }}
         branch: master
   {{- end }}
-  {{- if $chart := $stage.value.customAppConfig.kargo.chart }}
+  {{- if $chart := $stage.value.customAppConfig.kargo.charts }}
+ {{- range $chart := $stage.value.customAppConfig.kargo.charts }}
     - chart:
         registryURL: {{ $chart.registryURL }}
         name: {{ $chart.name }}
+  {{- end }}
   {{- end }}
 {{- end }}
 ---
