@@ -24,3 +24,11 @@ applications:
         charts:
         - registryURL: https://baloise-incubator.github.io/gitops-nginx-demo
           name: gitops-nginx-demo
+  kargo-demo-dev:
+    customAppConfig:
+      kargo:
+        name: kargo-demo
+        autoPromote: true
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: kargo-demo.image.tag
