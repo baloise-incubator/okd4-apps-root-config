@@ -17,3 +17,5 @@ bootstrap:
  - name: okd4-photobooth
  - name: okd4-robert-groensfeld-apps
  - name: kargo-demo-simple
+ - name: kargo-demo-helm
+

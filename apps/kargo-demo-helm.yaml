@@ -1,0 +1,14 @@
+repository: https://github.com/baloise-incubator/kargo-demo-helm.git
+namespace:
+  annotations: {}
+  labels:
+    owner: kargo-demo-simple
+
+
+# Default resources
+enableDefaultNetworkPolicy: true
+enableDefaultLimitRange: true
+allowAllNamespaces: false
+
+# List of directories inside config repository
+applications: {}
