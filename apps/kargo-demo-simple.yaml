@@ -1,4 +1,9 @@
 repository: https://github.com/baloise-incubator/kargo-demo-simple.git
+namespace:
+  annotations: {}
+  labels:
+    owner: kargo-demo-simple
+
 
 # Default resources
 enableDefaultNetworkPolicy: true
