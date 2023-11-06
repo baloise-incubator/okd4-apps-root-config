@@ -11,4 +11,45 @@ enableDefaultLimitRange: true
 allowAllNamespaces: false
 
 # List of directories inside config repository
-applications: {}
+applications:
+  kargo-demo-helm-int:
+    customAppConfig:
+      kargo:
+        name: kargo-demo-helm
+        autoPromote: false
+        charts:
+        - registryURL: https://baloise-incubator.github.io/kargo-demo-app
+          name: kargo-demo-app
+  kargo-demo-helm-chnw1-prod:
+    customAppConfig:
+      kargo:
+        name: kargo-demo-helm
+        autoPromote: false
+        charts:
+        - registryURL: https://baloise-incubator.github.io/kargo-demo-app
+          name: kargo-demo-app
+  kargo-demo-helm-acc:
+    customAppConfig:
+      kargo:
+        name: kargo-demo-helm
+        autoPromote: false
+        charts:
+        - registryURL: https://baloise-incubator.github.io/kargo-demo-app
+          name: kargo-demo-app
+  kargo-demo-helm-chnw2-prod:
+    customAppConfig:
+      kargo:
+        name: kargo-demo-helm
+        autoPromote: false
+        charts:
+        - registryURL: https://baloise-incubator.github.io/kargo-demo-app
+          name: kargo-demo-app
+  kargo-demo-helm-test:
+    customAppConfig:
+      kargo:
+        name: kargo-demo-helm
+        autoPromote: false
+        charts:
+        - registryURL: https://baloise-incubator.github.io/kargo-demo-app
+          name: kargo-demo-app
+
