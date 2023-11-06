@@ -11,8 +11,9 @@ enableDefaultLimitRange: false
 allowAllNamespaces: true
 
 roleBindings:
-#  - groupName: "team1"
-#    clusterRoleName: "admin"
+- name: "system:authenticated:oauth"
+  kind: Group
+  clusterRoleName: admin
 
 clusterResourceWhitelist:
 - group: '*'
