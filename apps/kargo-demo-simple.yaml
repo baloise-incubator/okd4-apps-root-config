@@ -12,34 +12,34 @@ allowAllNamespaces: false
 
 # List of directories inside config repository
 applications:
-  demo-app-simple-prod:
+  kargo-demo-simple-acc:
     customAppConfig:
       kargo:
-        name: demo-app-simple
+        name: kargo-demo-simple
         autoPromote: false
         images:
         - image: docker.io/niiku/kargo-demo-app
           key: kargo-demo.image.tag
-  demo-app-simple-acc:
+  kargo-demo-simple-prod:
     customAppConfig:
       kargo:
-        name: demo-app-simple
+        name: kargo-demo-simple
         autoPromote: false
         images:
         - image: docker.io/niiku/kargo-demo-app
           key: kargo-demo.image.tag
-  demo-app-simple-test:
+  kargo-demo-simple-int:
     customAppConfig:
       kargo:
-        name: demo-app-simple
+        name: kargo-demo-simple
         autoPromote: false
         images:
         - image: docker.io/niiku/kargo-demo-app
           key: kargo-demo.image.tag
-  demo-app-simple-int:
+  kargo-demo-simple-test:
     customAppConfig:
       kargo:
-        name: demo-app-simple
+        name: kargo-demo-simple
         autoPromote: false
         images:
         - image: docker.io/niiku/kargo-demo-app
