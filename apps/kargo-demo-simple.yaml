@@ -6,4 +6,36 @@ enableDefaultLimitRange: true
 allowAllNamespaces: false
 
 # List of directories inside config repository
-applications: {}
+applications:
+  demo-app-simple-prod:
+    customAppConfig:
+      kargo:
+        name: demo-app-simple
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: kargo-demo.image.tag
+  demo-app-simple-acc:
+    customAppConfig:
+      kargo:
+        name: demo-app-simple
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: kargo-demo.image.tag
+  demo-app-simple-test:
+    customAppConfig:
+      kargo:
+        name: demo-app-simple
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: kargo-demo.image.tag
+  demo-app-simple-int:
+    customAppConfig:
+      kargo:
+        name: demo-app-simple
+        autoPromote: false
+        images:
+        - image: docker.io/niiku/gitops-nginx-demo
+          key: kargo-demo.image.tag
