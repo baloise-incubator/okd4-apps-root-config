@@ -20,15 +20,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  mp-wf-quarkus: {}
-  camel-k-resources: {}
-  code-camp-resources: {}
-  flux01: {}
-  flux02: {}
-  k8s-quark-devops: {}
-  monitoring-stack: {}
-  gabelstapler-test: {}
-  address-search-test: {}
-  realtime-collab-test: {}
-  diabetes-app-test: {}
+applications: {}
