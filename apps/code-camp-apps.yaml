@@ -20,4 +20,7 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications: {}
+applications:
+  code-camp-resources: {}
+  monitoring-stack: {}
+  gabelstapler-test: {}
