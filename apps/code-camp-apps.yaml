@@ -1,4 +1,4 @@
-# repository: https://github.com/baloise-incubator/code-camp-apps.git
+repository: https://github.com/baloise-incubator/code-camp-apps.git
 namespace:
   annotations: {}
   labels:
