@@ -1,0 +1,24 @@
+repository: https://github.com/nghia9691/okd4-deployments.git
+#argocdNamespace: "argocd"
+#server: "https://kubernetes.default.svc"
+namespace:
+  annotations: {}
+  labels:
+    client: nghiatran
+
+enableDefaultNetworkPolicy: false
+enableDefaultLimitRange: false
+allowAllNamespaces: true
+enableHelmKustomize: true
+
+roleBindings:
+#  - groupName: "team1"
+#    clusterRoleName: "admin"
+
+clusterResourceWhitelist:
+
+namespaceResourceBlacklist:
+#  - group: 'apps'
+#    kind: 'DaemonSet'
+
+applications: {}
