@@ -12,8 +12,9 @@ allowAllNamespaces: true
 enableHelmKustomize: true
 
 roleBindings:
-#  - groupName: "team1"
-#    clusterRoleName: "admin"
+- clusterRoleName: admin
+  kind: User
+  name: nghia9691
 
 clusterResourceWhitelist:
 
