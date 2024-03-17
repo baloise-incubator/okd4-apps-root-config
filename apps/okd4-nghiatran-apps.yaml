@@ -25,3 +25,4 @@ namespaceResourceBlacklist:
 applications: 
   sen-test: {}
   npad-test: {}
+  bore-test: {}
