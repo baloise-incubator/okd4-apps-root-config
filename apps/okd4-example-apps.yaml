@@ -27,3 +27,4 @@ applications:
   baloise-design-system-docs-test: {}
   forward-proxy-test: {}
   sonarqube: {}
+  user-namespace: {}
