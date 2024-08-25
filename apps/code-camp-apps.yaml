@@ -20,11 +20,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  code-camp-resources: {}
-  monitoring-stack: {}
-  gabelstapler-test: {}
-  diabetes-app-test: {}
-  address-search-test: {}
-  realtime-collab-test: {}
-  k8s-quark-devops: {}
+applications: {}
