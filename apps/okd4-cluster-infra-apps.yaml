@@ -37,3 +37,4 @@ applications:
   kargo: {}
   devops-stack: {}
   gh-action-kargo: {}
+  argo-events: {}
