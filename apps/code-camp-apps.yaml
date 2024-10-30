@@ -22,3 +22,4 @@ namespaceResourceBlacklist:
 
 applications:
   argo-events-playground-test: {}
+  argo-rollouts-playground-test: {}
