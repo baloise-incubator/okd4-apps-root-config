@@ -38,4 +38,3 @@ applications:
   devops-stack: {}
   gh-action-kargo: {}
   argo-events: {}
-  argo-rollouts: {}
