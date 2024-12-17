@@ -23,5 +23,5 @@ namespaceResourceBlacklist:
 applications:
   argo-events-playground-test: {}
   argo-rollouts-playground-test:
-    enableAutoSync: false
+    disableAutoSync: true
   blabla-spotify: {}
