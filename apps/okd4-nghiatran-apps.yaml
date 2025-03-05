@@ -25,4 +25,6 @@ namespaceResourceBlacklist:
 applications: 
   sen-test: {}
   npad-test: {}
+  fsync-test: {}
+  stream-test: {}
   bore-test: {}
