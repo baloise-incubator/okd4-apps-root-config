@@ -29,3 +29,4 @@ applications:
   sonarqube: {}
   user-namespace: {}
   grafana-tempo-test: {}
+  grafana-tempo-minio-test: {}
