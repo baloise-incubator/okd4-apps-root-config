@@ -28,3 +28,4 @@ applications:
   forward-proxy-test: {}
   sonarqube: {}
   user-namespace: {}
+  grafana-tempo-test: {}
