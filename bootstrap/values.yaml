@@ -19,4 +19,5 @@ bootstrap:
  - name: kargo-demo-simple
  - name: kargo-demo-helm
  - name: okd4-nghiatran-apps
+ - name: okd4-mbob-apps
 
