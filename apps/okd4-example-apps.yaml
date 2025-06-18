@@ -31,3 +31,4 @@ applications:
   grafana-tempo-test: {}
   grafana-tempo-minio-test: {}
   apache-webserver: {}
+  wordpress-test: {}
