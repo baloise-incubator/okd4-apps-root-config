@@ -14,7 +14,7 @@ enableHelmKustomize: true
 roleBindings:
 - clusterRoleName: admin
   kind: User
-  name: hieu049087
+  name: hieu-le-trong
 
 clusterResourceWhitelist:
 
