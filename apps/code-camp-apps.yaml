@@ -21,7 +21,4 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications:
-  argo-events-playground-test: {}
-  argo-rollouts-playground-test:
-    disableAutoSync: true
   blabla-spotify: {}
