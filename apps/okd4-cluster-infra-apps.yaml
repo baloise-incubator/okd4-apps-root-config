@@ -35,4 +35,8 @@ applications:
   argo-events: {}
   lvms:
     disableNamespaceCreation: true
-  nfs-provisioner: {}
+    extraSyncOptions:
+      - SkipDryRunOnMissingResource=true
+  nfs-provisioner:
+    extraSyncOptions:
+      - SkipDryRunOnMissingResource=true

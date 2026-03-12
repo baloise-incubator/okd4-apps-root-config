@@ -43,6 +43,9 @@ spec:
     syncOptions:
       - ApplyOutOfSyncOnly=true
       - ServerSideApply=true
+{{- range default list $value.extraSyncOptions }}
+      - {{ . }}
+{{- end }}
     automated:
       prune: {{ default true $automatedPrune }}
       selfHeal: {{ default true $selfHeal }}
