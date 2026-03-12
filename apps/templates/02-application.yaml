@@ -42,6 +42,7 @@ spec:
   syncPolicy:
     syncOptions:
       - ApplyOutOfSyncOnly=true
+      - ServerSideApply=true
     automated:
       prune: {{ default true $automatedPrune }}
       selfHeal: {{ default true $selfHeal }}
