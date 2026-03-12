@@ -10,6 +10,8 @@ metadata:
     notifications.argoproj.io/subscribe.on-sync-failed.teams: channelName
     notifications.argoproj.io/subscribe.on-sync-running.requestcollector: ""
     notifications.argoproj.io/subscribe.on-sync-succeeded.requestcollector: ""
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: {{ default "argocd" $.Values.argocdNamespace }}
