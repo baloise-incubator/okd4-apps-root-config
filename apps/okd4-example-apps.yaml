@@ -23,11 +23,4 @@ namespaceResourceBlacklist:
 #  - group: 'apps'
 #    kind: 'DaemonSet'
 
-applications:
-  baloise-design-system-docs-test: {}
-  forward-proxy-test: {}
-  sonarqube: {}
-  user-namespace: {}
-  grafana-tempo-test: {}
-  grafana-tempo-minio-test: {}
-  wordpress-test: {}
+applications: {}
