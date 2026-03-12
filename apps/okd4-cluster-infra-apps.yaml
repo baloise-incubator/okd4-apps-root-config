@@ -33,3 +33,6 @@ applications:
   reloader: {}
   sealed-secrets: {}
   argo-events: {}
+  lvms:
+    disableNamespaceCreation: true
+  nfs-provisioner: {}
