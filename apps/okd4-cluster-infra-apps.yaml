@@ -32,5 +32,4 @@ applications:
   kubernetes-oom-event-generator: {}
   reloader: {}
   sealed-secrets: {}
-  gh-action-kargo: {}
   argo-events: {}
