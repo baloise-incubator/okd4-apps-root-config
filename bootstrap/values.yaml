@@ -1,24 +1,25 @@
 repository: https://github.com/baloise-incubator/okd4-apps-root-config.git
 bootstrap:
+# Applications were disabled to to non usage. If you want to use it again, just uncomment the line
  - name: okd4-cluster-infra-apps
- - name: okd4-cluster-resources
- - name: okd4-example-apps
- - name: code-camp-apps
+ - name: okd4-cluster-resources          # stale: last push 2025-05-19
+ - name: okd4-example-apps               # stale: last push 2025-08-22
+ # - name: code-camp-apps                  # stale: last push 2025-01-17
  - name: okd4-table-tennis-tournament-apps
- - name: okd4-joachim-apps
- - name: okd4-luechtdiode-apps
- - name: pizzeria-ristorante
- - name: okd4-this-or-that-apps
- - name: sven-goldcard-spring-boot-rest-demo-config
- - name: okd4-yannickholzenkamp-apps
- - name: okd4-gitops-demo
- - name: okd4-patrick-apps
- - name: okd4-koenigle-apps
- - name: okd4-photobooth
- - name: okd4-robert-groensfeld-apps
- - name: kargo-demo-simple
- - name: kargo-demo-helm
- - name: okd4-nghiatran-apps
- - name: okd4-mbob-apps
- - name: okd4-hieule-apps
+ # - name: okd4-joachim-apps               # stale: last push 2020-07-20
+ # - name: okd4-luechtdiode-apps           # stale: last push 2020-10-18
+ # - name: pizzeria-ristorante             # stale: last push 2020-08-18
+ # - name: okd4-this-or-that-apps          # stale: last push 2024-08-09
+ # - name: sven-goldcard-spring-boot-rest-demo-config  # stale: last push 2020-11-15
+ # - name: okd4-yannickholzenkamp-apps     # stale: last push 2021-11-03
+ # - name: okd4-gitops-demo                # stale: last push 2024-06-10
+ # - name: okd4-patrick-apps               # stale: last push 2021-06-12
+ # - name: okd4-koenigle-apps              # stale: last push 2023-07-26
+ # - name: okd4-photobooth                 # stale: last push 2023-06-22
+ # - name: okd4-robert-groensfeld-apps     # stale: last push 2023-08-02
+ # - name: kargo-demo-simple               # stale: last push 2023-11-21
+ # - name: kargo-demo-helm                 # stale: last push 2023-11-08
+ # - name: okd4-nghiatran-apps
+ # - name: okd4-mbob-apps                  # stale: last push 2025-05-30
+ # - name: okd4-hieule-apps                # stale: last push 2025-10-03
 
