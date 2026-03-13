@@ -31,6 +31,7 @@ applications:
   external-secrets: {}
   reloader: {}
   argo-events: {}
+  gitopscli: {}
   lvms:
     disableNamespaceCreation: true
     extraSyncOptions:
