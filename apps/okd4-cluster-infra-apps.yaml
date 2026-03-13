@@ -29,9 +29,7 @@ applications:
   cert-manager: {}
   external-dns: {}
   external-secrets: {}
-  kubernetes-oom-event-generator: {}
   reloader: {}
-  sealed-secrets: {}
   argo-events: {}
   lvms:
     disableNamespaceCreation: true
