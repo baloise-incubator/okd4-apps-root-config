@@ -39,4 +39,3 @@ applications:
   nfs-provisioner:
     extraSyncOptions:
     - SkipDryRunOnMissingResource=true
-  gitopscli-test: {}
