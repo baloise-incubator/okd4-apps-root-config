@@ -35,7 +35,8 @@ applications:
   lvms:
     disableNamespaceCreation: true
     extraSyncOptions:
-      - SkipDryRunOnMissingResource=true
+    - SkipDryRunOnMissingResource=true
   nfs-provisioner:
     extraSyncOptions:
-      - SkipDryRunOnMissingResource=true
+    - SkipDryRunOnMissingResource=true
+  gitopscli-test: {}
