@@ -36,3 +36,4 @@ applications:
     disableNamespaceCreation: true
     extraSyncOptions:
     - SkipDryRunOnMissingResource=true
+  nfs-server-provisioner: {}
