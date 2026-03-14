@@ -38,7 +38,6 @@ spec:
     plugin:
       name: kustomized-helm
 {{- end }}
-{{- if not $disableAutoSync }}
   syncPolicy:
     syncOptions:
       - ApplyOutOfSyncOnly=true
@@ -46,6 +45,7 @@ spec:
 {{- range default list $value.extraSyncOptions }}
       - {{ . }}
 {{- end }}
+{{- if not $disableAutoSync }}
     automated:
       prune: {{ default true $automatedPrune }}
       selfHeal: {{ default true $selfHeal }}
