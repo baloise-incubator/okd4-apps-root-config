@@ -33,7 +33,6 @@ applications:
   argo-events: {}
   gitopscli: {}
   lvms:
-    disabled: true
     disableNamespaceCreation: true
     extraSyncOptions:
     - SkipDryRunOnMissingResource=true
