@@ -27,5 +27,5 @@ applications:
     source:
       directory:
         recurse: true
-    disableAutoSync: true
+    disableAutoSync: false
 
