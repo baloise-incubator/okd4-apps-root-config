@@ -37,3 +37,4 @@ applications:
     extraSyncOptions:
     - SkipDryRunOnMissingResource=true
   nfs-server-provisioner: {}
+  workstation: {}
