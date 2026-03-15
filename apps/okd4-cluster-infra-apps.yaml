@@ -38,3 +38,4 @@ applications:
     - SkipDryRunOnMissingResource=true
   nfs-server-provisioner: {}
   workstation: {}
+  litellm: {}
