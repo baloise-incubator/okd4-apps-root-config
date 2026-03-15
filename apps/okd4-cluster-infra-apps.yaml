@@ -39,3 +39,4 @@ applications:
   nfs-server-provisioner: {}
   workstation: {}
   litellm: {}
+  openhands: {}
