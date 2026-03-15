@@ -40,3 +40,5 @@ applications:
   workstation: {}
   litellm: {}
   openhands: {}
+  agent-platform: {}
+  librechat: {}
