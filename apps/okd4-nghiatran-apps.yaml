@@ -23,8 +23,9 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications: 
-  sen-test: {}
-  npad-test: {}
-  fsync-test: {}
-  stream-test: {}
-  bore-test: {}
+  # sen-test: {}
+  # npad-test: {}
+  # fsync-test: {}
+  # stream-test: {}
+  # bore-test: {}
+  st-server-test: {}
