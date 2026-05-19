@@ -23,7 +23,7 @@ namespaceResourceBlacklist:
 #    kind: 'DaemonSet'
 
 applications: 
-  # sen-test: {}
+  sen-test: {}
   # npad-test: {}
   # fsync-test: {}
   # stream-test: {}
