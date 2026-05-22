@@ -19,7 +19,7 @@ bootstrap:
  # - name: okd4-robert-groensfeld-apps     # stale: last push 2023-08-02
  # - name: kargo-demo-simple               # stale: last push 2023-11-21
  # - name: kargo-demo-helm                 # stale: last push 2023-11-08
- - name: okd4-nghiatran-apps
+ # - name: okd4-nghiatran-apps
  # - name: okd4-mbob-apps                  # stale: last push 2025-05-30
  # - name: okd4-hieule-apps                # stale: last push 2025-10-03
 
